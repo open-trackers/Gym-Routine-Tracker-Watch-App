@@ -39,7 +39,7 @@ To any Apple product managers who like this app, please consider Sherlocking it!
 
 ## See Also
 
-* [GroutLib](https://gym-routine-tracker.github.io/GroutLib) - shared business logic and data layer for GRT
+* [GroutLib](https://github.com/gym-routine-tracker/GroutLib) - shared business logic and data layer for GRT
 
 Apps by the same author:
 
