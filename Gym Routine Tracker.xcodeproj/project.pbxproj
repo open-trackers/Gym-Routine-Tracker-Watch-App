@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4000597D293D22F900661E4F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000597C293D22F900661E4F /* AboutView.swift */; };
+		4000597F293D274F00661E4F /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000597E293D274F00661E4F /* AppIcon.swift */; };
+		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
+		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
+		40CE1404293B0DBB00462D62 /* Gym Routine Tracker Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40CE1409293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */; };
+		40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE140C293B0DBC00462D62 /* Assets.xcassets */; };
+		40CE1458293B100800462D62 /* GroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE1457293B100800462D62 /* GroutLib */; };
+		40CE145D293B113600462D62 /* Compactor in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE145C293B113600462D62 /* Compactor */; };
+		40CE14AC293B153700462D62 /* RoutineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE148C293B153700462D62 /* RoutineList.swift */; };
+		40CE14AD293B153700462D62 /* RoutineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE148D293B153700462D62 /* RoutineCell.swift */; };
+		40CE14AE293B153700462D62 /* SettingsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE148E293B153700462D62 /* SettingsForm.swift */; };
+		40CE14AF293B153700462D62 /* RoutineSinceText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE148F293B153700462D62 /* RoutineSinceText.swift */; };
+		40CE14B0293B153700462D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1490293B153700462D62 /* ContentView.swift */; };
+		40CE14B1293B153700462D62 /* ExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1492293B153700462D62 /* ExerciseList.swift */; };
+		40CE14B2293B153700462D62 /* RoutineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1493293B153700462D62 /* RoutineDetail.swift */; };
+		40CE14B3293B153700462D62 /* RoutineRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1495293B153700462D62 /* RoutineRunView.swift */; };
+		40CE14B4293B153700462D62 /* RoutineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1496293B153700462D62 /* RoutineControl.swift */; };
+		40CE14B5293B153700462D62 /* ExerciseRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1497293B153700462D62 /* ExerciseRunView.swift */; };
+		40CE14B6293B153700462D62 /* ExerciseRunMiddleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1498293B153700462D62 /* ExerciseRunMiddleRow.swift */; };
+		40CE14B7293B153700462D62 /* ExerciseFirstTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE149A293B153700462D62 /* ExerciseFirstTab.swift */; };
+		40CE14B8293B153700462D62 /* ExerciseIntensityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE149B293B153700462D62 /* ExerciseIntensityTab.swift */; };
+		40CE14B9293B153700462D62 /* ExerciseVolumeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE149C293B153700462D62 /* ExerciseVolumeTab.swift */; };
+		40CE14BA293B153700462D62 /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE149D293B153700462D62 /* ExerciseDetail.swift */; };
+		40CE14BB293B153700462D62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE149F293B153700462D62 /* Constants.swift */; };
+		40CE14BC293B153700462D62 /* PresetsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A0293B153700462D62 /* PresetsPicker.swift */; };
+		40CE14BD293B153700462D62 /* StepperUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A1293B153700462D62 /* StepperUtils.swift */; };
+		40CE14BE293B153700462D62 /* Bundle-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A2293B153700462D62 /* Bundle-extension.swift */; };
+		40CE14BF293B153700462D62 /* ElapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A3293B153700462D62 /* ElapsedView.swift */; };
+		40CE14C0293B153700462D62 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A4293B153700462D62 /* ActionButton.swift */; };
+		40CE14C1293B153700462D62 /* TextFieldWithPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A5293B153700462D62 /* TextFieldWithPresets.swift */; };
+		40CE14C2293B153700462D62 /* FakeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A6293B153700462D62 /* FakeSection.swift */; };
+		40CE14C3293B153700462D62 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A7293B153700462D62 /* AddButton.swift */; };
+		40CE14C4293B153700462D62 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A8293B153700462D62 /* TitleText.swift */; };
+		40CE14C5293B153700462D62 /* ImageStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE14A9293B153700462D62 /* ImageStepper.swift */; };
+		40CE14C6293B153700462D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE14AB293B153700462D62 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40CE1405293B0DBB00462D62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40CE13F7293B0DBB00462D62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40CE1402293B0DBB00462D62;
+			remoteInfo = "Gym Routine Tracker Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40CE1416293B0DBC00462D62 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				40CE1404293B0DBB00462D62 /* Gym Routine Tracker Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4000597C293D22F900661E4F /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		4000597E293D274F00661E4F /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		40A70CA9293BA22D008688F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		40A70CAA293BA22D008688F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		40CE13FD293B0DBB00462D62 /* Gym Routine Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_Routine_Tracker_App.swift; sourceTree = "<group>"; };
+		40CE140C293B0DBC00462D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40CE1459293B105800462D62 /* Gym Routine Tracker Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Gym Routine Tracker Watch App.entitlements"; sourceTree = "<group>"; };
+		40CE145A293B109400462D62 /* Gym-Routine-Tracker-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gym-Routine-Tracker-Watch-App-Info.plist"; sourceTree = "<group>"; };
+		40CE148C293B153700462D62 /* RoutineList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineList.swift; sourceTree = "<group>"; };
+		40CE148D293B153700462D62 /* RoutineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineCell.swift; sourceTree = "<group>"; };
+		40CE148E293B153700462D62 /* SettingsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsForm.swift; sourceTree = "<group>"; };
+		40CE148F293B153700462D62 /* RoutineSinceText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineSinceText.swift; sourceTree = "<group>"; };
+		40CE1490293B153700462D62 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		40CE1492293B153700462D62 /* ExerciseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseList.swift; sourceTree = "<group>"; };
+		40CE1493293B153700462D62 /* RoutineDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDetail.swift; sourceTree = "<group>"; };
+		40CE1495293B153700462D62 /* RoutineRunView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineRunView.swift; sourceTree = "<group>"; };
+		40CE1496293B153700462D62 /* RoutineControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineControl.swift; sourceTree = "<group>"; };
+		40CE1497293B153700462D62 /* ExerciseRunView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseRunView.swift; sourceTree = "<group>"; };
+		40CE1498293B153700462D62 /* ExerciseRunMiddleRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseRunMiddleRow.swift; sourceTree = "<group>"; };
+		40CE149A293B153700462D62 /* ExerciseFirstTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseFirstTab.swift; sourceTree = "<group>"; };
+		40CE149B293B153700462D62 /* ExerciseIntensityTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseIntensityTab.swift; sourceTree = "<group>"; };
+		40CE149C293B153700462D62 /* ExerciseVolumeTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseVolumeTab.swift; sourceTree = "<group>"; };
+		40CE149D293B153700462D62 /* ExerciseDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
+		40CE149F293B153700462D62 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40CE14A0293B153700462D62 /* PresetsPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetsPicker.swift; sourceTree = "<group>"; };
+		40CE14A1293B153700462D62 /* StepperUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperUtils.swift; sourceTree = "<group>"; };
+		40CE14A2293B153700462D62 /* Bundle-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-extension.swift"; sourceTree = "<group>"; };
+		40CE14A3293B153700462D62 /* ElapsedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElapsedView.swift; sourceTree = "<group>"; };
+		40CE14A4293B153700462D62 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		40CE14A5293B153700462D62 /* TextFieldWithPresets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithPresets.swift; sourceTree = "<group>"; };
+		40CE14A6293B153700462D62 /* FakeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSection.swift; sourceTree = "<group>"; };
+		40CE14A7293B153700462D62 /* AddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		40CE14A8293B153700462D62 /* TitleText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
+		40CE14A9293B153700462D62 /* ImageStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStepper.swift; sourceTree = "<group>"; };
+		40CE14AB293B153700462D62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40CE1400293B0DBB00462D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CE1458293B100800462D62 /* GroutLib in Frameworks */,
+				40CE145D293B113600462D62 /* Compactor in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40CE13F6293B0DBB00462D62 = {
+			isa = PBXGroup;
+			children = (
+				40A70CA9293BA22D008688F8 /* LICENSE */,
+				40A70CAA293BA22D008688F8 /* README.md */,
+				40CE145A293B109400462D62 /* Gym-Routine-Tracker-Watch-App-Info.plist */,
+				40CE1459293B105800462D62 /* Gym Routine Tracker Watch App.entitlements */,
+				40CE1407293B0DBB00462D62 /* Sources */,
+				40CE13FE293B0DBB00462D62 /* Products */,
+				40CE1456293B100800462D62 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40CE13FE293B0DBB00462D62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40CE13FD293B0DBB00462D62 /* Gym Routine Tracker.app */,
+				40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40CE1407293B0DBB00462D62 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */,
+				40CE148B293B153700462D62 /* Main View */,
+				40CE1499293B153700462D62 /* Exercise Detail */,
+				40CE1491293B153700462D62 /* Routine Detail */,
+				40CE1494293B153700462D62 /* Run Views */,
+				40CE149E293B153700462D62 /* Helper */,
+				40CE14AA293B153700462D62 /* Preview Content */,
+				40CE140C293B0DBC00462D62 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		40CE1456293B100800462D62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40CE148B293B153700462D62 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				40CE1490293B153700462D62 /* ContentView.swift */,
+				40CE148C293B153700462D62 /* RoutineList.swift */,
+				40CE148D293B153700462D62 /* RoutineCell.swift */,
+				40CE148E293B153700462D62 /* SettingsForm.swift */,
+				40CE148F293B153700462D62 /* RoutineSinceText.swift */,
+				4000597C293D22F900661E4F /* AboutView.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		40CE1491293B153700462D62 /* Routine Detail */ = {
+			isa = PBXGroup;
+			children = (
+				40CE1492293B153700462D62 /* ExerciseList.swift */,
+				40CE1493293B153700462D62 /* RoutineDetail.swift */,
+			);
+			path = "Routine Detail";
+			sourceTree = "<group>";
+		};
+		40CE1494293B153700462D62 /* Run Views */ = {
+			isa = PBXGroup;
+			children = (
+				40CE1495293B153700462D62 /* RoutineRunView.swift */,
+				40CE1496293B153700462D62 /* RoutineControl.swift */,
+				40CE1497293B153700462D62 /* ExerciseRunView.swift */,
+				40CE1498293B153700462D62 /* ExerciseRunMiddleRow.swift */,
+			);
+			path = "Run Views";
+			sourceTree = "<group>";
+		};
+		40CE1499293B153700462D62 /* Exercise Detail */ = {
+			isa = PBXGroup;
+			children = (
+				40CE149A293B153700462D62 /* ExerciseFirstTab.swift */,
+				40CE149B293B153700462D62 /* ExerciseIntensityTab.swift */,
+				40CE149C293B153700462D62 /* ExerciseVolumeTab.swift */,
+				40CE149D293B153700462D62 /* ExerciseDetail.swift */,
+			);
+			path = "Exercise Detail";
+			sourceTree = "<group>";
+		};
+		40CE149E293B153700462D62 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				40CE14A4293B153700462D62 /* ActionButton.swift */,
+				40CE14A7293B153700462D62 /* AddButton.swift */,
+				4000597E293D274F00661E4F /* AppIcon.swift */,
+				40CE14A2293B153700462D62 /* Bundle-extension.swift */,
+				40CE149F293B153700462D62 /* Constants.swift */,
+				40CE14A3293B153700462D62 /* ElapsedView.swift */,
+				40CE14A6293B153700462D62 /* FakeSection.swift */,
+				40CE14A9293B153700462D62 /* ImageStepper.swift */,
+				40CE14A0293B153700462D62 /* PresetsPicker.swift */,
+				40CE14A1293B153700462D62 /* StepperUtils.swift */,
+				40CE14A5293B153700462D62 /* TextFieldWithPresets.swift */,
+				40CE14A8293B153700462D62 /* TitleText.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		40CE14AA293B153700462D62 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				40CE14AB293B153700462D62 /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "../../../_archive/_watchapp_archive/OldStuff/Source/Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40CE13FC293B0DBB00462D62 /* Gym Routine Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CE1417293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker" */;
+			buildPhases = (
+				40CE13FB293B0DBB00462D62 /* Resources */,
+				40CE1416293B0DBC00462D62 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40CE1406293B0DBB00462D62 /* PBXTargetDependency */,
+			);
+			name = "Gym Routine Tracker";
+			productName = "Gym Routine Tracker";
+			productReference = 40CE13FD293B0DBB00462D62 /* Gym Routine Tracker.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		40CE1402293B0DBB00462D62 /* Gym Routine Tracker Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CE1413293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker Watch App" */;
+			buildPhases = (
+				40CE13FF293B0DBB00462D62 /* Sources */,
+				40CE1400293B0DBB00462D62 /* Frameworks */,
+				40CE1401293B0DBB00462D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gym Routine Tracker Watch App";
+			packageProductDependencies = (
+				40CE1457293B100800462D62 /* GroutLib */,
+				40CE145C293B113600462D62 /* Compactor */,
+			);
+			productName = "Gym Routine Tracker Watch App";
+			productReference = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40CE13F7293B0DBB00462D62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					40CE13FC293B0DBB00462D62 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					40CE1402293B0DBB00462D62 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 40CE13FA293B0DBB00462D62 /* Build configuration list for PBXProject "Gym Routine Tracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40CE13F6293B0DBB00462D62;
+			packageReferences = (
+				40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */,
+			);
+			productRefGroup = 40CE13FE293B0DBB00462D62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40CE13FC293B0DBB00462D62 /* Gym Routine Tracker */,
+				40CE1402293B0DBB00462D62 /* Gym Routine Tracker Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40CE13FB293B0DBB00462D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A70CAC293BA22D008688F8 /* README.md in Resources */,
+				40A70CAB293BA22D008688F8 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CE1401293B0DBB00462D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CE14C6293B153700462D62 /* Preview Assets.xcassets in Resources */,
+				40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40CE13FF293B0DBB00462D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CE14AC293B153700462D62 /* RoutineList.swift in Sources */,
+				40CE14BF293B153700462D62 /* ElapsedView.swift in Sources */,
+				40CE14BB293B153700462D62 /* Constants.swift in Sources */,
+				4000597D293D22F900661E4F /* AboutView.swift in Sources */,
+				40CE14C3293B153700462D62 /* AddButton.swift in Sources */,
+				4000597F293D274F00661E4F /* AppIcon.swift in Sources */,
+				40CE14C0293B153700462D62 /* ActionButton.swift in Sources */,
+				40CE14B8293B153700462D62 /* ExerciseIntensityTab.swift in Sources */,
+				40CE1409293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift in Sources */,
+				40CE14BC293B153700462D62 /* PresetsPicker.swift in Sources */,
+				40CE14B0293B153700462D62 /* ContentView.swift in Sources */,
+				40CE14C2293B153700462D62 /* FakeSection.swift in Sources */,
+				40CE14B1293B153700462D62 /* ExerciseList.swift in Sources */,
+				40CE14B5293B153700462D62 /* ExerciseRunView.swift in Sources */,
+				40CE14B6293B153700462D62 /* ExerciseRunMiddleRow.swift in Sources */,
+				40CE14BE293B153700462D62 /* Bundle-extension.swift in Sources */,
+				40CE14C1293B153700462D62 /* TextFieldWithPresets.swift in Sources */,
+				40CE14B7293B153700462D62 /* ExerciseFirstTab.swift in Sources */,
+				40CE14BD293B153700462D62 /* StepperUtils.swift in Sources */,
+				40CE14AF293B153700462D62 /* RoutineSinceText.swift in Sources */,
+				40CE14AE293B153700462D62 /* SettingsForm.swift in Sources */,
+				40CE14BA293B153700462D62 /* ExerciseDetail.swift in Sources */,
+				40CE14B4293B153700462D62 /* RoutineControl.swift in Sources */,
+				40CE14AD293B153700462D62 /* RoutineCell.swift in Sources */,
+				40CE14B3293B153700462D62 /* RoutineRunView.swift in Sources */,
+				40CE14B9293B153700462D62 /* ExerciseVolumeTab.swift in Sources */,
+				40CE14C5293B153700462D62 /* ImageStepper.swift in Sources */,
+				40CE14B2293B153700462D62 /* RoutineDetail.swift in Sources */,
+				40CE14C4293B153700462D62 /* TitleText.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40CE1406293B0DBB00462D62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40CE1402293B0DBB00462D62 /* Gym Routine Tracker Watch App */;
+			targetProxy = 40CE1405293B0DBB00462D62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40CE1411293B0DBC00462D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout.watch;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40CE1412293B0DBC00462D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout.watch;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		40CE1414293B0DBC00462D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Gym Routine Tracker Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
+				DEVELOPMENT_TEAM = J735QC5U38;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gym-Routine-Tracker-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gym Routine Tracker";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		40CE1415293B0DBC00462D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Gym Routine Tracker Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
+				DEVELOPMENT_TEAM = J735QC5U38;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gym-Routine-Tracker-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gym Routine Tracker";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		40CE1418293B0DBC00462D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J735QC5U38;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gym Routine Tracker";
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		40CE1419293B0DBC00462D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J735QC5U38;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gym Routine Tracker";
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40CE13FA293B0DBB00462D62 /* Build configuration list for PBXProject "Gym Routine Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CE1411293B0DBC00462D62 /* Debug */,
+				40CE1412293B0DBC00462D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40CE1413293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CE1414293B0DBC00462D62 /* Debug */,
+				40CE1415293B0DBC00462D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40CE1417293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CE1418293B0DBC00462D62 /* Debug */,
+				40CE1419293B0DBC00462D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openalloc/SwiftCompactor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40CE1457293B100800462D62 /* GroutLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GroutLib;
+		};
+		40CE145C293B113600462D62 /* Compactor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */;
+			productName = Compactor;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 40CE13F7293B0DBB00462D62 /* Project object */;
+}
