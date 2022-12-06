@@ -11,6 +11,7 @@
 		4000597F293D274F00661E4F /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000597E293D274F00661E4F /* AppIcon.swift */; };
 		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
+		40BD218F293FDD0500B17BEA /* GroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40BD218E293FDD0500B17BEA /* GroutLib */; };
 		40CE1404293B0DBB00462D62 /* Gym Routine Tracker Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40CE1409293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */; };
 		40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE140C293B0DBC00462D62 /* Assets.xcassets */; };
@@ -115,6 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40CE1458293B100800462D62 /* GroutLib in Frameworks */,
+				40BD218F293FDD0500B17BEA /* GroutLib in Frameworks */,
 				40CE145D293B113600462D62 /* Compactor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +276,7 @@
 			packageProductDependencies = (
 				40CE1457293B100800462D62 /* GroutLib */,
 				40CE145C293B113600462D62 /* Compactor */,
+				40BD218E293FDD0500B17BEA /* GroutLib */,
 			);
 			productName = "Gym Routine Tracker Watch App";
 			productReference = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */;
@@ -308,6 +311,7 @@
 			mainGroup = 40CE13F6293B0DBB00462D62;
 			packageReferences = (
 				40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */,
+				40BD218D293FDD0500B17BEA /* XCRemoteSwiftPackageReference "GroutLib" */,
 			);
 			productRefGroup = 40CE13FE293B0DBB00462D62 /* Products */;
 			projectDirPath = "";
@@ -632,6 +636,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		40BD218D293FDD0500B17BEA /* XCRemoteSwiftPackageReference "GroutLib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gym-routine-tracker/GroutLib.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/openalloc/SwiftCompactor.git";
@@ -643,6 +655,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		40BD218E293FDD0500B17BEA /* GroutLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40BD218D293FDD0500B17BEA /* XCRemoteSwiftPackageReference "GroutLib" */;
+			productName = GroutLib;
+		};
 		40CE1457293B100800462D62 /* GroutLib */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GroutLib;
