@@ -9,17 +9,20 @@ _A minimalist wrist-based gym workout tracker_
 - Prioritizes convenience, quick interactions, and the basic needs of the recreational fitness user.
 
 ### Quick and easy setup
+
 - Add routines and exercises in the app itself, with convenient preset names available.
 - For each exercise optionally specify seat settings and set/rep counts. 
 - For the exercise's intensity (usually weight lifted), optionally specify the units and the step.
 
 ### When ‘running’ a routine
+
 - Convenient one-tap button to indicate that an exercise is complete.
 - Optional long-press to automatically step up (advance) to next higher intensity in future.
 - Convenient skip to the next incomplete exercise, in case a machine isn’t immediately available.
 - Control screen showing the time elapsed since starting the routine.
 
 ### App features
+
 - Simple data model of user-defined routines and their exercises.
 - Your data syncs with CloudKit when a network connection is available.
 - Fully open source where code is licensed with Mozilla Public License 2.0.
@@ -31,9 +34,9 @@ Requires WatchOS 9.1 or later
 
 ## Caveats
 
-- Grout remembers only your most recent workout for each routine. It does not (yet) maintain a historical record of progress.
+- GRT remembers only your most recent workout for each routine. It does not (yet) maintain a historical record of progress.
 - Future enhancements will largely rely on contributors.
-- Grout prioritizes convenience, quick interactions, and the basic needs of the recreational user. More sophisticated trackers are available on the App Store.
+- GRT prioritizes convenience, quick interactions, and the basic needs of the recreational user. More sophisticated trackers are available on the App Store.
 
 To any Apple product managers who like this app, please consider Sherlocking it!
 
