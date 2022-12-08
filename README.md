@@ -2,6 +2,10 @@
 
 _A minimalist wrist-based gym workout tracker_
 
+## Download
+
+Available as a free download in the App Store [HERE](https://apps.apple.com/us/app/gym-routine-tracker/id6444747204).
+
 ## Features
 
 - Independent WatchOS app, not requiring companion iOS app. Leave your iPhone at home!
@@ -42,6 +46,7 @@ To any Apple product managers who like this app, please consider Sherlocking it!
 
 ## See Also
 
+* [Gym Routine Tracker](https://apps.apple.com/us/app/gym-routine-tracker/id6444747204) - App Store link for free download of GRT
 * [GroutLib](https://github.com/gym-routine-tracker/GroutLib) - shared business logic and data layer for GRT
 
 Apps by the same author:
