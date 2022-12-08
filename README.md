@@ -46,7 +46,8 @@ To any Apple product managers who like this app, please consider Sherlocking it!
 
 ## See Also
 
-* [Gym Routine Tracker](https://apps.apple.com/us/app/gym-routine-tracker/id6444747204) - App Store link for free download of GRT
+* [GRT Website](https://gym-routine-tracker.github.io) - Website for GRT
+* [GRT on the App Store](https://apps.apple.com/us/app/gym-routine-tracker/id6444747204) - App Store link for free download of GRT
 * [GroutLib](https://github.com/gym-routine-tracker/GroutLib) - shared business logic and data layer for GRT
 
 Apps by the same author:
