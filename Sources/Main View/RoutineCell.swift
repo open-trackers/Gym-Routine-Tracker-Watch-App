@@ -25,46 +25,45 @@ public struct RoutineCell: View {
     public var body: some View {
         VStack(alignment: .leading, spacing: 3) {
             HStack {
-                Button(action: startAction) {
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Image(systemName: routine.imageName ?? "dumbbell.fill")
-                            Spacer()
-                        }
+                VStack(alignment: .leading) {
+                    HStack {
+                        Image(systemName: routine.imageName ?? "dumbbell.fill")
+                        Spacer()
                     }
-                    .padding(.vertical, 12)
                 }
-                // .border(.teal)
+                .padding(.vertical, 12)
+                .contentShape(Rectangle())
+                .onTapGesture(perform: startAction)
+//                 .border(.teal)
 
                 Spacer(minLength: 20)
 
                 NavigationLink(value: routine) {
-                    Image(systemName: "ellipsis.rectangle.fill") // "slider.horizontal.3")
+                    Image(systemName: "ellipsis.rectangle.fill")
                         // .imageScale(.large)
                         .padding(.leading, 20)
                         .padding(.vertical, 10)
-                    // .border(.teal)
+//                     .border(.teal)
                 }
             }
             .foregroundColor(routineColor)
             .font(.title2)
             .symbolRenderingMode(.hierarchical)
 
-            Button(action: startAction) {
-                VStack(alignment: .leading) {
-                    TitleText(routine.name ?? "unknown")
-                        .foregroundColor(titleColor)
+            VStack(alignment: .leading) {
+                TitleText(routine.name ?? "unknown")
+                    .foregroundColor(titleColor)
 
-                    RoutineSinceText(routine: routine, now: $now)
-                        .font(.body)
-                        .italic()
-                        .foregroundColor(lastColor)
-                        .lineLimit(1)
-                }
+                RoutineSinceText(routine: routine, now: $now)
+                    .font(.body)
+                    .italic()
+                    .foregroundColor(lastColor)
+                    .lineLimit(1)
             }
-            // .border(.teal)
+            .contentShape(Rectangle())
+            .onTapGesture(perform: startAction)
+//             .border(.teal)
         }
-        .buttonStyle(.borderless)
         .onAppear {
             // refresh immediately on routine completion (timer only updates 'now' on on the minute)
             now = Date.now
