@@ -75,7 +75,7 @@
 		4000597E293D274F00661E4F /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
 		40A70CA9293BA22D008688F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40A70CAA293BA22D008688F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		40CE13FD293B0DBB00462D62 /* Gym Routine Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_Routine_Tracker_App.swift; sourceTree = "<group>"; };
 		40CE140C293B0DBC00462D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		40CE13FE293B0DBB00462D62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40CE13FD293B0DBB00462D62 /* Gym Routine Tracker.app */,
+				40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */,
 				40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */,
 			);
 			name = Products;
@@ -243,9 +243,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		40CE13FC293B0DBB00462D62 /* Gym Routine Tracker */ = {
+		40CE13FC293B0DBB00462D62 /* Gym Routine Tracker Watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40CE1417293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker" */;
+			buildConfigurationList = 40CE1417293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker Watch" */;
 			buildPhases = (
 				40CE13FB293B0DBB00462D62 /* Resources */,
 				40CE1416293B0DBC00462D62 /* Embed Watch Content */,
@@ -255,9 +255,9 @@
 			dependencies = (
 				40CE1406293B0DBB00462D62 /* PBXTargetDependency */,
 			);
-			name = "Gym Routine Tracker";
+			name = "Gym Routine Tracker Watch";
 			productName = "Gym Routine Tracker";
-			productReference = 40CE13FD293B0DBB00462D62 /* Gym Routine Tracker.app */;
+			productReference = 40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		40CE1402293B0DBB00462D62 /* Gym Routine Tracker Watch App */ = {
@@ -300,7 +300,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 40CE13FA293B0DBB00462D62 /* Build configuration list for PBXProject "Gym Routine Tracker" */;
+			buildConfigurationList = 40CE13FA293B0DBB00462D62 /* Build configuration list for PBXProject "Gym Routine Tracker Watch" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -317,7 +317,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40CE13FC293B0DBB00462D62 /* Gym Routine Tracker */,
+				40CE13FC293B0DBB00462D62 /* Gym Routine Tracker Watch */,
 				40CE1402293B0DBB00462D62 /* Gym Routine Tracker Watch App */,
 			);
 		};
@@ -606,7 +606,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40CE13FA293B0DBB00462D62 /* Build configuration list for PBXProject "Gym Routine Tracker" */ = {
+		40CE13FA293B0DBB00462D62 /* Build configuration list for PBXProject "Gym Routine Tracker Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40CE1411293B0DBC00462D62 /* Debug */,
@@ -624,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40CE1417293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker" */ = {
+		40CE1417293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40CE1418293B0DBC00462D62 /* Debug */,
