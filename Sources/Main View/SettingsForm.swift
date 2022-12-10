@@ -10,6 +10,8 @@
 
 import SwiftUI
 
+import GroutUI
+
 struct SettingsForm: View {
     @AppStorage(alwaysAdvanceOnLongPressKey) var alwaysAdvanceOnLongPress: Bool = false
 

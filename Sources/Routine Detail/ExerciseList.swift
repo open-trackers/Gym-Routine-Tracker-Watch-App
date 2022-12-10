@@ -10,6 +10,7 @@
 
 import SwiftUI
 
+import GroutUI
 import GroutLib
 
 struct ExerciseList: View {

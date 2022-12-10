@@ -10,6 +10,8 @@
 
 import SwiftUI
 
+import GroutUI
+
 struct AboutView: View {
     var body: some View {
         VStack(alignment: .center) {

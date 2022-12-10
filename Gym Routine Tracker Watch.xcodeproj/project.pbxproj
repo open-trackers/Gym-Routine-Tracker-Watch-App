@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4000597D293D22F900661E4F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000597C293D22F900661E4F /* AboutView.swift */; };
 		4000597F293D274F00661E4F /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000597E293D274F00661E4F /* AppIcon.swift */; };
+		40A1A8C9294550620042966C /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40A1A8C8294550620042966C /* GroutUI */; };
 		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
 		40BD218F293FDD0500B17BEA /* GroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40BD218E293FDD0500B17BEA /* GroutLib */; };
@@ -117,6 +118,7 @@
 			files = (
 				40CE1458293B100800462D62 /* GroutLib in Frameworks */,
 				40BD218F293FDD0500B17BEA /* GroutLib in Frameworks */,
+				40A1A8C9294550620042966C /* GroutUI in Frameworks */,
 				40CE145D293B113600462D62 /* Compactor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +279,7 @@
 				40CE1457293B100800462D62 /* GroutLib */,
 				40CE145C293B113600462D62 /* Compactor */,
 				40BD218E293FDD0500B17BEA /* GroutLib */,
+				40A1A8C8294550620042966C /* GroutUI */,
 			);
 			productName = "Gym Routine Tracker Watch App";
 			productReference = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */;
@@ -655,6 +658,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		40A1A8C8294550620042966C /* GroutUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GroutUI;
+		};
 		40BD218E293FDD0500B17BEA /* GroutLib */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 40BD218D293FDD0500B17BEA /* XCRemoteSwiftPackageReference "GroutLib" */;

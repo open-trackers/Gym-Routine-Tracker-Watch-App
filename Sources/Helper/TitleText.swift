@@ -10,6 +10,8 @@
 
 import SwiftUI
 
+import GroutUI
+
 struct TitleText: View {
     private var text: String
 

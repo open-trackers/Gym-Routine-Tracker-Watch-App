@@ -12,6 +12,7 @@ import SwiftUI
 
 import Compactor
 
+import GroutUI
 import GroutLib
 
 struct ElapsedView: View {
