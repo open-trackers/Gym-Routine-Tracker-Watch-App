@@ -11,8 +11,8 @@
 import CoreData
 import SwiftUI
 
-import GroutUI
 import GroutLib
+import GroutUI
 
 struct ContentView: View {
     @State var router: NavigationPath = .init()
