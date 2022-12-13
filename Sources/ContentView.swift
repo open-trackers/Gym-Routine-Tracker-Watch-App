@@ -15,13 +15,10 @@ import GroutLib
 import GroutUI
 
 struct ContentView: View {
-    @State var router: NavigationPath = .init()
+    // @State var router: NavigationPath = .init()
 
     var body: some View {
-        NavigationStack(path: $router) {
-            RoutineList(router: $router)
-        }
-        .interactiveDismissDisabled() // NOTE: needed to prevent home button from dismissing sheet
+        RoutinesContainerView()
     }
 }
 
