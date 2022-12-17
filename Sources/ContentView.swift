@@ -26,24 +26,9 @@ struct ContentView: View {
 
     // NOTE: mirrored in iOS app
     private var routinesContainer: some View {
-        RouteredNavStack(navData: $routinesRouterData) {
+        RouteredNavStack(navData: $routinesRouterData) { router in
             RoutineList()
-                .navigationDestination(for: RoutineUriRep.self) { uriRep in
-                    if let routine = Routine.get(viewContext, forURIRepresentation: uriRep.value) {
-                        RoutineDetail(routine: routine)
-                        //// .environmentObject(router)
-                    } else {
-                        Text("Routine not available.")
-                    }
-                }
-                .navigationDestination(for: ExerciseUriRep.self) { uriRep in
-                    if let exercise = Exercise.get(viewContext, forURIRepresentation: uriRep.value) {
-                        ExerciseDetail(exercise: exercise)
-                        //// .environmentObject(router)
-                    } else {
-                        Text("Exercise not available.")
-                    }
-                }
+                .environmentObject(router)
                 // .navigationBarTitleDisplayMode(.large)
                 // .navigationBarHidden(true)
                 .navigationTitle("Routines")
