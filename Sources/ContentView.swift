@@ -18,25 +18,27 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     // @State var router: NavigationPath = .init()
 
+    @SceneStorage("main-routines-router") private var routinesRouterData: Data?
+    
     var body: some View {
         routinesContainer
     }
     
     //NOTE: mirrored in iOS app
     private var routinesContainer: some View {
-        RouteredNavStack { $path in
-            RoutineList(path: $path)
-                .navigationDestination(for: Routine.UriRep.self) { uriRep in
+        RouteredNavStack(navData: $routinesRouterData) {
+            RoutineList()
+                .navigationDestination(for: RoutineUriRep.self) { uriRep in
                     if let routine = Routine.get(viewContext, forURIRepresentation: uriRep.value) {
-                        RoutineDetail(path: $path, routine: routine)
+                        RoutineDetail(routine: routine)
                         //// .environmentObject(router)
                     } else {
                         Text("Routine not available.")
                     }
                 }
-                .navigationDestination(for: Exercise.UriRep.self) { uriRep in
+                .navigationDestination(for: ExerciseUriRep.self) { uriRep in
                     if let exercise = Exercise.get(viewContext, forURIRepresentation: uriRep.value) {
-                        ExerciseDetail(path: $path, exercise: exercise)
+                        ExerciseDetail(exercise: exercise)
                         //// .environmentObject(router)
                     } else {
                         Text("Exercise not available.")
