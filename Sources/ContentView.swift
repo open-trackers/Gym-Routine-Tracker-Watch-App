@@ -19,12 +19,12 @@ struct ContentView: View {
     // @State var router: NavigationPath = .init()
 
     @SceneStorage("main-routines-router") private var routinesRouterData: Data?
-    
+
     var body: some View {
         routinesContainer
     }
-    
-    //NOTE: mirrored in iOS app
+
+    // NOTE: mirrored in iOS app
     private var routinesContainer: some View {
         RouteredNavStack(navData: $routinesRouterData) {
             RoutineList()
