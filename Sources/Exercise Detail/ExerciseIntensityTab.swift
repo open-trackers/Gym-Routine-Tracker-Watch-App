@@ -19,6 +19,7 @@ struct ExerciseIntensityTab: View {
 
     internal init(exercise: Exercise) {
         self.exercise = exercise
+        exercise.intensityStep = 0.5
         _units = State(initialValue: exercise.units)
     }
 
