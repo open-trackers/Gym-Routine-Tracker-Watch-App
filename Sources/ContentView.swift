@@ -16,7 +16,6 @@ import GroutUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    // @State var router: NavigationPath = .init()
 
     @SceneStorage("main-routines-router") private var routinesRouterData: Data?
 
@@ -26,7 +25,7 @@ struct ContentView: View {
 
     // NOTE: mirrored in iOS app
     private var routinesContainer: some View {
-        RouteredNavStack(navData: $routinesRouterData) { router in
+        MyNavigationStack(navData: $routinesRouterData) { router in
             RoutineList()
                 .environmentObject(router)
         }
