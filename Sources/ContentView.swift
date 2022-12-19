@@ -31,7 +31,7 @@ struct ContentView: View {
                 .environmentObject(router)
                 // .navigationBarTitleDisplayMode(.large)
                 // .navigationBarHidden(true)
-                .navigationTitle("Routines")
+                //.navigationTitle("Routines")
         }
     }
 }
