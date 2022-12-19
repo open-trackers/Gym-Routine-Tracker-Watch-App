@@ -29,9 +29,9 @@ struct ContentView: View {
         RouteredNavStack(navData: $routinesRouterData) { router in
             RoutineList()
                 .environmentObject(router)
-                // .navigationBarTitleDisplayMode(.large)
-                // .navigationBarHidden(true)
-                //.navigationTitle("Routines")
+            // .navigationBarTitleDisplayMode(.large)
+            // .navigationBarHidden(true)
+            // .navigationTitle("Routines")
         }
     }
 }
