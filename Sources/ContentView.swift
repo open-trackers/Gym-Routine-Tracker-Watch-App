@@ -20,14 +20,8 @@ struct ContentView: View {
     @SceneStorage("main-routines-router") private var routinesRouterData: Data?
 
     var body: some View {
-        routinesContainer
-    }
-
-    // NOTE: mirrored in iOS app
-    private var routinesContainer: some View {
-        MyNavigationStack(navData: $routinesRouterData) { router in
+        MyNavigationStack(navData: $routinesRouterData) { _ in
             RoutineList()
-                .environmentObject(router)
         }
     }
 }
