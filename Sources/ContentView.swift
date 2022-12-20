@@ -20,7 +20,7 @@ struct ContentView: View {
     @SceneStorage("main-routines-router") private var routinesRouterData: Data?
 
     var body: some View {
-        MyNavigationStack(navData: $routinesRouterData) { _ in
+        MyNavigationStack(navData: $routinesRouterData) {
             RoutineList()
         }
     }
