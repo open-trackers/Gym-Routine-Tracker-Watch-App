@@ -24,7 +24,8 @@ struct ContentView: View {
     var body: some View {
         WatchNavigationStack(navData: $routinesNavData) {
             RoutineList(navStack: navStack,
-                        exerciseDetail: exerciseDetail) { exercise, nextAction, hasNextIncomplete, $selectedExercise in
+                        
+                                    standardViews: WatchStandardViews()) { exercise, nextAction, hasNextIncomplete, $selectedExercise in
                 WatchExerciseRun(exercise: exercise,
                                  middleMode: $middleMode,
                                  nextAction: nextAction,

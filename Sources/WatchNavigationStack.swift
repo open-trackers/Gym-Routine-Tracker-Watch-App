@@ -31,17 +31,8 @@ struct WatchNavigationStack: View {
 
     var body: some View {
         MyNavigationStack(navData: $navData,
-                          routineDetail: routineDetail,
-                          exerciseDetail: exerciseDetail,
+                          standardViews: WatchStandardViews(),
                           rootContent: rootContent)
-    }
-
-    private func routineDetail(_ routine: Routine) -> AnyView {
-        WatchRoutineDetail(routine: routine).eraseToAnyView()
-    }
-    
-    private func exerciseDetail(_ exercise: Exercise) -> AnyView {
-        WatchExerciseDetail(exercise: exercise).eraseToAnyView()
     }
 
 //    public func exerciseRun(exercise: Exercise,
