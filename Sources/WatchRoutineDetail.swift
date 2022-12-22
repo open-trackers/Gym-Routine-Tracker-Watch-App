@@ -18,60 +18,51 @@ struct WatchRoutineDetail: View {
     @ObservedObject var routine: Routine
 
     var body: some View {
-        RoutineDetail(routine: routine) {
-            TabView(selection: $selectedTab) {
-                Form {
-                    Section("Name") {
-                        TextFieldWithPresets($routine.wrappedName,
-                                             prompt: "Enter routine name",
-                                             color: routineColor,
-                                             presets: routinePresets)
-                    }
+        TabView(selection: $selectedTab) {
+            Form {
+                Section("Name") {
+                    TextFieldWithPresets($routine.wrappedName,
+                                         prompt: "Enter routine name",
+                                         color: routineColor,
+                                         presets: routinePresets)
+                }
 
-                    Section("Image") {
-                        ImageStepper(initialName: routine.imageName, imageNames: systemImageNames) {
-                            routine.imageName = $0
-                        }
+                Section("Image") {
+                    ImageStepper(initialName: routine.imageName, imageNames: systemImageNames) {
+                        routine.imageName = $0
                     }
                 }
-                .tabItem {
-                    Text("Properties")
-                }
-                .tag(0)
+            }
+            .tabItem {
+                Text("Properties")
+            }
+            .tag(0)
 
-                FakeSection("Exercises") {
-                    ExerciseList(routine: routine)
-                    // .environmentObject(router)
-                }
-                .tabItem {
-                    Text("Exercises")
-                }
-                .tag(1)
+            FakeSection("Exercises") {
+                ExerciseList(routine: routine)
+                // .environmentObject(router)
             }
-            .tabViewStyle(.page)
-            .navigationTitle {
-                Text("Routine")
-                    .foregroundColor(routineColor)
+            .tabItem {
+                Text("Exercises")
             }
+            .tag(1)
         }
+        .tabViewStyle(.page)
+        .navigationTitle {
+            Text("Routine")
+                .foregroundColor(routineColor)
+        }
+        .onDisappear(perform: onDisappearAction)
     }
 
     // MARK: - Properties
 
-//    private var exerciseCount: Int {
-//        routine.exercises?.count ?? 0
-//    }
-
     // MARK: - Actions
 
-//    private func exerciseListAction() {
-//        router.path.append(MyRoutes.exerciseList(routine.uriRepresentation))
-//    }
-
-//    private func onDisappearAction() {
-//        logger.debug("Routine Detail, onDisappear")
-//        PersistenceManager.shared.save()
-//    }
+    private func onDisappearAction() {
+        logger.debug("Routine Detail, onDisappear")
+        PersistenceManager.shared.save()
+    }
 }
 
 // struct WatchRoutineDetail_Previews: PreviewProvider {
