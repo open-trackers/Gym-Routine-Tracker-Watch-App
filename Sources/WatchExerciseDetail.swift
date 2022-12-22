@@ -7,13 +7,12 @@
 
 import SwiftUI
 
-import GroutUI
 import GroutLib
+import GroutUI
 
 struct WatchExerciseDetail: View {
-    
     var exercise: Exercise
-    
+
     // MARK: - Locals
 
     @SceneStorage("ExerciseDetailTab") private var tabSelected = 1
@@ -42,15 +41,14 @@ struct WatchExerciseDetail: View {
             }
         }
     }
-    
+
     private var title: String {
         "Exercise"
     }
-
 }
 
-//struct WatchExerciseDetail_Previews: PreviewProvider {
+// struct WatchExerciseDetail_Previews: PreviewProvider {
 //    static var previews: some View {
 //        WatchExerciseDetail()
 //    }
-//}
+// }

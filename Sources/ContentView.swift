@@ -24,7 +24,7 @@ struct ContentView: View {
     var body: some View {
         WatchNavigationStack(navData: $routinesNavData) {
             RoutineList(standardViews: WatchStandardViews())
-            .eraseToAnyView()
+                .eraseToAnyView()
         }
     }
 }

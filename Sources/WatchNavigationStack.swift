@@ -11,7 +11,6 @@ import GroutLib
 import GroutUI
 
 struct WatchNavigationStack: View {
- 
     // MARK: - Parameters
 
     @Binding private var navData: Data?
