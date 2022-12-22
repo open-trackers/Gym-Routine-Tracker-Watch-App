@@ -12,10 +12,10 @@ import GroutUI
 
 struct WatchStandardViews: StandardViews {
     var routineDetail: (Routine) -> AnyView {
-        routineDetailX
+        { WatchRoutineDetail(routine: $0).eraseToAnyView() }
     }
     var exerciseDetail: (Exercise) -> AnyView {
-        exerciseDetailX
+        { WatchExerciseDetail(exercise: $0).eraseToAnyView() }
     }
     
     var exerciseRun: (Exercise,
@@ -29,14 +29,6 @@ struct WatchStandardViews: StandardViews {
     var navigationStack: (Binding<Data?>,
                           @escaping () -> AnyView) -> AnyView {
         navigationStackX
-    }
-    
-    private func routineDetailX(_ routine: Routine) -> AnyView {
-        WatchRoutineDetail(routine: routine).eraseToAnyView()
-    }
-    
-    private func exerciseDetailX(_ exercise: Exercise) -> AnyView {
-        WatchExerciseDetail(exercise: exercise).eraseToAnyView()
     }
     
     private func exerciseRunX(exercise: Exercise,

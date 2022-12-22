@@ -27,18 +27,6 @@ struct ContentView: View {
             .eraseToAnyView()
         }
     }
-
-    private func navStack(navData: Binding<Data?>,
-                          rootContent: @escaping () -> AnyView) -> some View
-    {
-        WatchNavigationStack(navData: navData, rootContent: rootContent)
-    }
-    
-//    private func exerciseDetail(_ exercise: Exercise) -> AnyView {
-//        WatchExerciseDetail(exercise: exercise).eraseToAnyView()
-//    }
-    
-
 }
 
 // TODO: four copies of each routine showing up; should be one!
