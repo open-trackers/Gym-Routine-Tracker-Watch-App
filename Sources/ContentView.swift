@@ -30,27 +30,29 @@ struct ContentView: View {
                                  hasNextIncomplete: hasNextIncomplete,
                                  selectedExercise: $selectedExercise)
             }
+            .eraseToAnyView()
         }
     }
     
-    private func routineDetail(routine: Routine) -> some View {
-        WatchRoutineDetail(routine: routine)
+    private func navStack(navData: Binding<Data?>,
+                          rootContent: @escaping () -> AnyView) -> some View {
+        WatchNavigationStack(navData: navData, rootContent: rootContent)
     }
 }
 
 // TODO: four copies of each routine showing up; should be one!
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        let ctx = PersistenceManager.preview.container.viewContext
-        let routine = Routine.create(ctx, userOrder: 0)
-        routine.name = "Back & Bicep"
-        let e1 = Exercise.create(ctx, userOrder: 0)
-        e1.name = "Lat Pulldown"
-        e1.routine = routine
-        let e2 = Exercise.create(ctx, userOrder: 1)
-        e2.name = "Arm Curl"
-        e2.routine = routine
-        return ContentView()
-            .environment(\.managedObjectContext, ctx)
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        let ctx = PersistenceManager.preview.container.viewContext
+//        let routine = Routine.create(ctx, userOrder: 0)
+//        routine.name = "Back & Bicep"
+//        let e1 = Exercise.create(ctx, userOrder: 0)
+//        e1.name = "Lat Pulldown"
+//        e1.routine = routine
+//        let e2 = Exercise.create(ctx, userOrder: 1)
+//        e2.name = "Arm Curl"
+//        e2.routine = routine
+//        return ContentView()
+//            .environment(\.managedObjectContext, ctx)
+//    }
+//}
