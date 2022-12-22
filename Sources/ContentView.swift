@@ -17,13 +17,13 @@ import GroutUI
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
-    @SceneStorage("main-routines-router") private var routinesRouterData: Data?
+    @SceneStorage("main-routines-router") private var routinesNavData: Data?
 
     @State private var middleMode: ExerciseMiddleRowMode = .intensity
 
     var body: some View {
-        MyNavigationStack(navData: $routinesRouterData) {
-            RoutineList { exercise, nextAction, hasNextIncomplete, $selectedExercise in
+        MyNavigationStack(navData: $routinesNavData, routineDetail: routineDetail) {
+            RoutineList(routineDetail: routineDetail) { exercise, nextAction, hasNextIncomplete, $selectedExercise in
                 WatchExerciseRun(exercise: exercise,
                                  middleMode: $middleMode,
                                  nextAction: nextAction,
@@ -31,6 +31,10 @@ struct ContentView: View {
                                  selectedExercise: $selectedExercise)
             }
         }
+    }
+    
+    private func routineDetail(routine: Routine) -> some View {
+        WatchRoutineDetail(routine: routine)
     }
 }
 
