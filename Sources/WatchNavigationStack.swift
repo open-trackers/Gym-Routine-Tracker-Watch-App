@@ -11,7 +11,7 @@ import GroutLib
 import GroutUI
 
 struct WatchNavigationStack: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    //@Environment(\.managedObjectContext) private var viewContext
 
     // MARK: - Parameters
 
@@ -34,16 +34,6 @@ struct WatchNavigationStack: View {
                           standardViews: WatchStandardViews(),
                           rootContent: rootContent)
     }
-
-//    public func exerciseRun(exercise: Exercise,
-//                             nextAction: @escaping (Int16?) -> Void,
-//                             hasNextIncomplete: @escaping () -> Bool,
-//                             selectedExercise: Binding<Exercise?>) -> AnyView {
-//        WatchExerciseRun(exercise: exercise,
-//                         nextAction: nextAction,
-//                         hasNextIncomplete: hasNextIncomplete,
-//                         selectedExercise: selectedExercise).eraseToAnyView()
-//    }
 }
 
 // struct WatchNavigationStack_Previews: PreviewProvider {
