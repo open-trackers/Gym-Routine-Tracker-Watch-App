@@ -11,8 +11,7 @@ import GroutLib
 import GroutUI
 
 struct WatchNavigationStack: View {
-    //@Environment(\.managedObjectContext) private var viewContext
-
+ 
     // MARK: - Parameters
 
     @Binding private var navData: Data?
