@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-import GroutUI
 import GroutLib
+import GroutUI
 
 struct WatchNavigationStack: View {
     @Environment(\.managedObjectContext) private var viewContext
-    
+
     // MARK: - Parameters
-    
+
     @Binding private var navData: Data?
     private var rootContent: () -> AnyView
-    
+
     public init(navData: Binding<Data?>,
                 @ViewBuilder rootContent: @escaping () -> AnyView)
     {
@@ -28,9 +28,9 @@ struct WatchNavigationStack: View {
     // MARK: - Locals
 
     @StateObject private var router: MyRouter = .init()
-    
+
     // MARK: - Views
-    
+
     var body: some View {
         NavigationStack(path: $router.path) {
             rootContent()
@@ -63,7 +63,7 @@ struct WatchNavigationStack: View {
                         }
                     case let .exerciseDetail(exerciseURI):
                         if let exercise = Exercise.get(viewContext, forURIRepresentation: exerciseURI) {
-                            //TODO Watch version
+                            // TODO: Watch version
                             Text("Watch Exercise Detail \(exercise.wrappedName)")
 //                            ExerciseDetail(exercise: exercise)
                                 .environmentObject(router)
@@ -77,8 +77,8 @@ struct WatchNavigationStack: View {
     }
 }
 
-//struct WatchNavigationStack_Previews: PreviewProvider {
+// struct WatchNavigationStack_Previews: PreviewProvider {
 //    static var previews: some View {
 //        WatchNavigationStack()
 //    }
-//}
+// }

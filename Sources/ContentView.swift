@@ -33,15 +33,16 @@ struct ContentView: View {
             .eraseToAnyView()
         }
     }
-    
+
     private func navStack(navData: Binding<Data?>,
-                          rootContent: @escaping () -> AnyView) -> some View {
+                          rootContent: @escaping () -> AnyView) -> some View
+    {
         WatchNavigationStack(navData: navData, rootContent: rootContent)
     }
 }
 
 // TODO: four copies of each routine showing up; should be one!
-//struct ContentView_Previews: PreviewProvider {
+// struct ContentView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        let ctx = PersistenceManager.preview.container.viewContext
 //        let routine = Routine.create(ctx, userOrder: 0)
@@ -55,4 +56,4 @@ struct ContentView: View {
 //        return ContentView()
 //            .environment(\.managedObjectContext, ctx)
 //    }
-//}
+// }
