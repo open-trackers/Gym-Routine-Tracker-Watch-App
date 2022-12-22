@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4058FD582954F06500448F8A /* WatchExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4058FD572954EA8900448F8A /* WatchExerciseDetail.swift */; };
 		40A0D0E929540BD900624539 /* WatchExerciseRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A0D0E829540BD900624539 /* WatchExerciseRun.swift */; };
 		40A0D0EF29541AD700624539 /* WatchRoutineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A0D0EE29541AD700624539 /* WatchRoutineDetail.swift */; };
 		40A0D0F329541DAB00624539 /* WatchNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A0D0F229541DAB00624539 /* WatchNavigationStack.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4058FD572954EA8900448F8A /* WatchExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExerciseDetail.swift; sourceTree = "<group>"; };
 		40A0D0E829540BD900624539 /* WatchExerciseRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExerciseRun.swift; sourceTree = "<group>"; };
 		40A0D0EE29541AD700624539 /* WatchRoutineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRoutineDetail.swift; sourceTree = "<group>"; };
 		40A0D0F229541DAB00624539 /* WatchNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchNavigationStack.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */,
 				40CE1490293B153700462D62 /* ContentView.swift */,
 				40A0D0E829540BD900624539 /* WatchExerciseRun.swift */,
+				4058FD572954EA8900448F8A /* WatchExerciseDetail.swift */,
 				40A0D0EE29541AD700624539 /* WatchRoutineDetail.swift */,
 				40A0D0F229541DAB00624539 /* WatchNavigationStack.swift */,
 				40CE14AA293B153700462D62 /* Preview Content */,
@@ -242,6 +245,7 @@
 			files = (
 				40CE1409293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift in Sources */,
 				40A0D0F329541DAB00624539 /* WatchNavigationStack.swift in Sources */,
+				4058FD582954F06500448F8A /* WatchExerciseDetail.swift in Sources */,
 				40CE14B0293B153700462D62 /* ContentView.swift in Sources */,
 				40A0D0E929540BD900624539 /* WatchExerciseRun.swift in Sources */,
 				40A0D0EF29541AD700624539 /* WatchRoutineDetail.swift in Sources */,

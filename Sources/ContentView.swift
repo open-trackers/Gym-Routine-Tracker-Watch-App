@@ -23,7 +23,8 @@ struct ContentView: View {
 
     var body: some View {
         WatchNavigationStack(navData: $routinesNavData) {
-            RoutineList(navStack: navStack) { exercise, nextAction, hasNextIncomplete, $selectedExercise in
+            RoutineList(navStack: navStack,
+                        exerciseDetail: exerciseDetail) { exercise, nextAction, hasNextIncomplete, $selectedExercise in
                 WatchExerciseRun(exercise: exercise,
                                  middleMode: $middleMode,
                                  nextAction: nextAction,
@@ -39,6 +40,12 @@ struct ContentView: View {
     {
         WatchNavigationStack(navData: navData, rootContent: rootContent)
     }
+    
+    private func exerciseDetail(_ exercise: Exercise) -> AnyView {
+        WatchExerciseDetail(exercise: exercise).eraseToAnyView()
+    }
+    
+
 }
 
 // TODO: four copies of each routine showing up; should be one!
