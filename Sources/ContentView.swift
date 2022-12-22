@@ -22,8 +22,8 @@ struct ContentView: View {
     @State private var middleMode: ExerciseMiddleRowMode = .intensity
 
     var body: some View {
-        MyNavigationStack(navData: $routinesNavData, routineDetail: routineDetail) {
-            RoutineList(routineDetail: routineDetail) { exercise, nextAction, hasNextIncomplete, $selectedExercise in
+        WatchNavigationStack(navData: $routinesNavData) {
+            RoutineList(navStack: navStack) { exercise, nextAction, hasNextIncomplete, $selectedExercise in
                 WatchExerciseRun(exercise: exercise,
                                  middleMode: $middleMode,
                                  nextAction: nextAction,
