@@ -26,6 +26,10 @@ struct WatchStandardViews: StandardViews {
         exerciseRunX
     }
     
+    var navigationStack: (Binding<Data?>,
+                          @escaping () -> AnyView) -> AnyView {
+        navigationStackX
+    }
     
     private func routineDetailX(_ routine: Routine) -> AnyView {
         WatchRoutineDetail(routine: routine).eraseToAnyView()
@@ -41,9 +45,15 @@ struct WatchStandardViews: StandardViews {
                               hasNextIncomplete: @escaping () -> Bool,
                               selectedExercise: Binding<Exercise?>) -> AnyView {
         WatchExerciseRun(exercise: exercise,
-                         middleMode: $middleMode,
+                         middleMode: middleMode,
                          nextAction: nextAction,
                          hasNextIncomplete: hasNextIncomplete,
                          selectedExercise: selectedExercise).eraseToAnyView()
+    }
+    
+    private func navigationStackX(navData: Binding<Data?>,
+                                  rootContent: @escaping () -> AnyView) -> AnyView {
+        WatchNavigationStack(navData: navData,
+                             rootContent: rootContent).eraseToAnyView()
     }
 }

@@ -23,16 +23,7 @@ struct ContentView: View {
 
     var body: some View {
         WatchNavigationStack(navData: $routinesNavData) {
-            RoutineList(navStack: navStack,
-                        
-                                    standardViews: WatchStandardViews())
-//            { exercise, nextAction, hasNextIncomplete, $selectedExercise in
-//                WatchExerciseRun(exercise: exercise,
-//                                 middleMode: $middleMode,
-//                                 nextAction: nextAction,
-//                                 hasNextIncomplete: hasNextIncomplete,
-//                                 selectedExercise: $selectedExercise)
-//            }
+            RoutineList(standardViews: WatchStandardViews())
             .eraseToAnyView()
         }
     }
