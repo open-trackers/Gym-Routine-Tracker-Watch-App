@@ -32,7 +32,7 @@ struct WatchStandardViews: StandardViews {
                          selectedExercise: selectedExercise).eraseToAnyView()
     }
 
-    func navigationStackX(navData: Binding<Data?>,
+    func navigationStack(navData: Binding<Data?>,
                           rootContent: @escaping () -> AnyView) -> AnyView
     {
         WatchNavigationStack(navData: navData,
