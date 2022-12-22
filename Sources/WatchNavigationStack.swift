@@ -38,6 +38,16 @@ struct WatchNavigationStack: View {
     private func routineDetail(_ routine: Routine) -> AnyView {
         WatchRoutineDetail(routine: routine).eraseToAnyView()
     }
+    
+//    public func exerciseRun(exercise: Exercise,
+//                             nextAction: @escaping (Int16?) -> Void,
+//                             hasNextIncomplete: @escaping () -> Bool,
+//                             selectedExercise: Binding<Exercise?>) -> AnyView {
+//        WatchExerciseRun(exercise: exercise,
+//                         nextAction: nextAction,
+//                         hasNextIncomplete: hasNextIncomplete,
+//                         selectedExercise: selectedExercise).eraseToAnyView()
+//    }
 }
 
 // struct WatchNavigationStack_Previews: PreviewProvider {
