@@ -25,13 +25,14 @@ struct ContentView: View {
         WatchNavigationStack(navData: $routinesNavData) {
             RoutineList(navStack: navStack,
                         
-                                    standardViews: WatchStandardViews()) { exercise, nextAction, hasNextIncomplete, $selectedExercise in
-                WatchExerciseRun(exercise: exercise,
-                                 middleMode: $middleMode,
-                                 nextAction: nextAction,
-                                 hasNextIncomplete: hasNextIncomplete,
-                                 selectedExercise: $selectedExercise)
-            }
+                                    standardViews: WatchStandardViews())
+//            { exercise, nextAction, hasNextIncomplete, $selectedExercise in
+//                WatchExerciseRun(exercise: exercise,
+//                                 middleMode: $middleMode,
+//                                 nextAction: nextAction,
+//                                 hasNextIncomplete: hasNextIncomplete,
+//                                 selectedExercise: $selectedExercise)
+//            }
             .eraseToAnyView()
         }
     }
@@ -42,9 +43,9 @@ struct ContentView: View {
         WatchNavigationStack(navData: navData, rootContent: rootContent)
     }
     
-    private func exerciseDetail(_ exercise: Exercise) -> AnyView {
-        WatchExerciseDetail(exercise: exercise).eraseToAnyView()
-    }
+//    private func exerciseDetail(_ exercise: Exercise) -> AnyView {
+//        WatchExerciseDetail(exercise: exercise).eraseToAnyView()
+//    }
     
 
 }
