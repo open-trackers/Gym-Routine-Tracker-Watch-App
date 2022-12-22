@@ -11,11 +11,17 @@ import GroutLib
 import GroutUI
 
 struct WatchStandardViews: StandardViews {
-    var routineDetail: (Routine) -> AnyView {
-        { WatchRoutineDetail(routine: $0).eraseToAnyView() }
+//    var routineDetail: (Routine) -> AnyView {
+//        { WatchRoutineDetail(routine: $0).eraseToAnyView() }
+//    }
+    func routineDetail(routine: Routine) -> AnyView {
+        WatchRoutineDetail(routine: routine).eraseToAnyView()
     }
-    var exerciseDetail: (Exercise) -> AnyView {
-        { WatchExerciseDetail(exercise: $0).eraseToAnyView() }
+//    var exerciseDetail: (Exercise) -> AnyView {
+//        { WatchExerciseDetail(exercise: $0).eraseToAnyView() }
+//    }
+    func exerciseDetail(exercise: Exercise) -> AnyView {
+        WatchExerciseDetail(exercise: exercise).eraseToAnyView()
     }
     
     var exerciseRun: (Exercise,
