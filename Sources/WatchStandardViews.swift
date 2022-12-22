@@ -24,20 +24,15 @@ struct WatchStandardViews: StandardViews {
         WatchExerciseDetail(exercise: exercise).eraseToAnyView()
     }
     
-    var exerciseRun: (Exercise,
-                      Binding<ExerciseMiddleRowMode>,
-                      @escaping (Int16?) -> Void,
-                      @escaping () -> Bool,
-                      Binding<Exercise?>) -> AnyView {
-        exerciseRunX
-    }
+//    var exerciseRun: (Exercise,
+//                      Binding<ExerciseMiddleRowMode>,
+//                      @escaping (Int16?) -> Void,
+//                      @escaping () -> Bool,
+//                      Binding<Exercise?>) -> AnyView {
+//        exerciseRunX
+//    }
     
-    var navigationStack: (Binding<Data?>,
-                          @escaping () -> AnyView) -> AnyView {
-        navigationStackX
-    }
-    
-    private func exerciseRunX(exercise: Exercise,
+    func exerciseRun(exercise: Exercise,
                               middleMode: Binding<ExerciseMiddleRowMode>,
                               nextAction: @escaping (Int16?) -> Void,
                               hasNextIncomplete: @escaping () -> Bool,
@@ -48,6 +43,23 @@ struct WatchStandardViews: StandardViews {
                          hasNextIncomplete: hasNextIncomplete,
                          selectedExercise: selectedExercise).eraseToAnyView()
     }
+    
+    var navigationStack: (Binding<Data?>,
+                          @escaping () -> AnyView) -> AnyView {
+        navigationStackX
+    }
+    
+//    private func exerciseRunX(exercise: Exercise,
+//                              middleMode: Binding<ExerciseMiddleRowMode>,
+//                              nextAction: @escaping (Int16?) -> Void,
+//                              hasNextIncomplete: @escaping () -> Bool,
+//                              selectedExercise: Binding<Exercise?>) -> AnyView {
+//        WatchExerciseRun(exercise: exercise,
+//                         middleMode: middleMode,
+//                         nextAction: nextAction,
+//                         hasNextIncomplete: hasNextIncomplete,
+//                         selectedExercise: selectedExercise).eraseToAnyView()
+//    }
     
     private func navigationStackX(navData: Binding<Data?>,
                                   rootContent: @escaping () -> AnyView) -> AnyView {
