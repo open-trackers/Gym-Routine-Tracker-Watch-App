@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40A0D0E929540BD900624539 /* WatchExerciseRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A0D0E829540BD900624539 /* WatchExerciseRun.swift */; };
 		40A1A8C9294550620042966C /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40A1A8C8294550620042966C /* GroutUI */; };
 		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		40A0D0E829540BD900624539 /* WatchExerciseRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExerciseRun.swift; sourceTree = "<group>"; };
 		40A70CA9293BA22D008688F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40A70CAA293BA22D008688F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			children = (
 				40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */,
 				40CE1490293B153700462D62 /* ContentView.swift */,
+				40A0D0E829540BD900624539 /* WatchExerciseRun.swift */,
 				40CE14AA293B153700462D62 /* Preview Content */,
 				40CE140C293B0DBC00462D62 /* Assets.xcassets */,
 				40CE145A293B109400462D62 /* Gym-Routine-Tracker-Watch-App-Info.plist */,
@@ -233,6 +236,7 @@
 			files = (
 				40CE1409293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift in Sources */,
 				40CE14B0293B153700462D62 /* ContentView.swift in Sources */,
+				40A0D0E929540BD900624539 /* WatchExerciseRun.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

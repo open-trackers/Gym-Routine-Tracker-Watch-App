@@ -19,9 +19,17 @@ struct ContentView: View {
 
     @SceneStorage("main-routines-router") private var routinesRouterData: Data?
 
+    @State private var middleMode: ExerciseMiddleRowMode = .intensity
+
     var body: some View {
         MyNavigationStack(navData: $routinesRouterData) {
-            RoutineList()
+            RoutineList { exercise, nextAction, hasNextIncomplete, $selectedExercise in
+                WatchExerciseRun(exercise: exercise,
+                                 middleMode: $middleMode,
+                                 nextAction: nextAction,
+                                 hasNextIncomplete: hasNextIncomplete,
+                                 selectedExercise: $selectedExercise)
+            }
         }
     }
 }
