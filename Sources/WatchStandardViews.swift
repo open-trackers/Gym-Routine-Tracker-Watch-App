@@ -35,7 +35,8 @@ final class WatchStandardViews: StandardViews {
                          middleMode: $middleMode,
                          nextAction: nextAction,
                          hasNextIncomplete: hasNextIncomplete,
-                         selectedExercise: selectedExercise).eraseToAnyView()
+                         selectedExercise: selectedExercise,
+                         standardViews: self).eraseToAnyView()
     }
 
     override func routineList() -> AnyView {
@@ -48,7 +49,30 @@ final class WatchStandardViews: StandardViews {
                                tint: Color,
                                onLongPress: (() -> Void)? = nil) -> AnyView
     {
-        WatchActionButton(action: action, imageSystemName: imageSystemName, buttonText: buttonText, tint: tint, onLongPress: onLongPress).eraseToAnyView()
+        WatchActionButton(action: action,
+                          imageSystemName: imageSystemName,
+                          buttonText: buttonText,
+                          tint: tint,
+                          onLongPress: onLongPress).eraseToAnyView()
+    }
+
+    override func routineControl(routine: Routine,
+                                 selectedTab: Binding<URL>,
+                                 onStop: @escaping () -> Void,
+                                 nextAction: @escaping (Int16?) -> Void,
+                                 maxOrder: Int16,
+                                 remainingCount: @escaping () -> Int,
+                                 startedAt: Date,
+                                 standardViews: StandardViews) -> AnyView
+    {
+        WatchRoutineControl(routine: routine,
+                            selectedTab: selectedTab,
+                            onStop: onStop,
+                            nextAction: nextAction,
+                            maxOrder: maxOrder,
+                            remainingCount: remainingCount,
+                            startedAt: startedAt,
+                            standardViews: standardViews).eraseToAnyView()
     }
 
 //    override func navigationStack(navData: Binding<Data?>,

@@ -18,18 +18,21 @@ struct WatchExerciseRun: View {
     private var nextAction: (Int16?) -> Void
     private var hasNextIncomplete: () -> Bool
     @Binding private var selectedExercise: Exercise?
+    private var standardViews: StandardViews
 
     internal init(exercise: Exercise,
                   middleMode: Binding<ExerciseMiddleRowMode>,
                   nextAction: @escaping (Int16?) -> Void,
                   hasNextIncomplete: @escaping () -> Bool,
-                  selectedExercise: Binding<Exercise?>)
+                  selectedExercise: Binding<Exercise?>,
+                  standardViews: StandardViews)
     {
         self.exercise = exercise
         _middleMode = middleMode
         self.nextAction = nextAction
         self.hasNextIncomplete = hasNextIncomplete
         _selectedExercise = selectedExercise
+        self.standardViews = standardViews
     }
 
     // MARK: - Views
@@ -38,7 +41,8 @@ struct WatchExerciseRun: View {
         ExerciseRunView(exercise: exercise,
                         nextAction: nextAction,
                         hasNextIncomplete: hasNextIncomplete,
-                        selectedExercise: $selectedExercise) { geo, titleText, navigationRow in
+                        selectedExercise: $selectedExercise,
+                        standardViews: standardViews) { geo, titleText, navigationRow in
             VStack {
                 titleText
                     .frame(height: geo.size.height * 3 / 13)
