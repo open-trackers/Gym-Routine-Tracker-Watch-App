@@ -14,22 +14,28 @@ struct WatchNavigationStack: View {
     // MARK: - Parameters
 
     @Binding private var navData: Data?
+    @Binding private var middleMode: ExerciseMiddleRowMode
     private var rootContent: () -> AnyView
 
     public init(navData: Binding<Data?>,
+                middleMode: Binding<ExerciseMiddleRowMode>,
                 @ViewBuilder rootContent: @escaping () -> AnyView)
     {
         _navData = navData
+        _middleMode = middleMode
         self.rootContent = rootContent
     }
 
     // MARK: - Locals
 
+    //TODO should be param?
+    //@State private var middleMode: ExerciseMiddleRowMode = .intensity
+    
     // MARK: - Views
 
     var body: some View {
         MyNavigationStack(navData: $navData,
-                          standardViews: WatchStandardViews(),
+                          standardViews: WatchStandardViews(middleMode: $middleMode),
                           rootContent: rootContent)
     }
 }
