@@ -13,27 +13,12 @@ import GroutUI
 struct WatchExerciseRun: View {
     // MARK: - Parameters
 
-    @ObservedObject private var exercise: Exercise
-    @Binding private var middleMode: ExerciseMiddleRowMode
-    private var nextAction: (Int16?) -> Void
-    private var hasNextIncomplete: () -> Bool
-    @Binding private var selectedExercise: Exercise?
-    private var standardViews: StandardViews
-
-    internal init(exercise: Exercise,
-                  middleMode: Binding<ExerciseMiddleRowMode>,
-                  nextAction: @escaping (Int16?) -> Void,
-                  hasNextIncomplete: @escaping () -> Bool,
-                  selectedExercise: Binding<Exercise?>,
-                  standardViews: StandardViews)
-    {
-        self.exercise = exercise
-        _middleMode = middleMode
-        self.nextAction = nextAction
-        self.hasNextIncomplete = hasNextIncomplete
-        _selectedExercise = selectedExercise
-        self.standardViews = standardViews
-    }
+    @ObservedObject var exercise: Exercise
+    @Binding var middleMode: ExerciseMiddleRowMode
+    var nextAction: (Int16?) -> Void
+    var hasNextIncomplete: () -> Bool
+    @Binding var selectedExercise: Exercise?
+    var standardViews: StandardViews
 
     // MARK: - Views
 

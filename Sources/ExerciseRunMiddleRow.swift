@@ -16,31 +16,18 @@ public enum ExerciseMiddleRowMode {
     case sets
 }
 
-public struct ExerciseRunMiddleRow<Content: View>: View {
+struct ExerciseRunMiddleRow<Content: View>: View {
     // MARK: - Parameters
 
-    private var imageName: String
-    private var imageColor: Color
-    private var onDetail: () -> Void
-    private var onTap: () -> Void
-    private var content: () -> Content
-
-    public init(imageName: String,
-                imageColor: Color,
-                onDetail: @escaping () -> Void,
-                onTap: @escaping () -> Void,
-                content: @escaping () -> Content)
-    {
-        self.imageName = imageName
-        self.imageColor = imageColor
-        self.onDetail = onDetail
-        self.onTap = onTap
-        self.content = content
-    }
+    var imageName: String
+    var imageColor: Color
+    var onDetail: () -> Void
+    var onTap: () -> Void
+    var content: () -> Content
 
     // MARK: - Views
 
-    public var body: some View {
+    var body: some View {
         HStack {
             Button(action: onTap) {
                 Image(systemName: imageName)
