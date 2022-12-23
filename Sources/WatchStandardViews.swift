@@ -39,7 +39,7 @@ final class WatchStandardViews: StandardViews {
     }
 
     override func routineList() -> AnyView {
-        RoutineList(standardViews: self).eraseToAnyView()
+        WatchRoutineList(standardViews: self).eraseToAnyView()
     }
 
 //    override func navigationStack(navData: Binding<Data?>,

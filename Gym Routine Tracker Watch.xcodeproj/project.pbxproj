@@ -22,6 +22,7 @@
 		40CE145D293B113600462D62 /* Compactor in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE145C293B113600462D62 /* Compactor */; };
 		40CE14B0293B153700462D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1490293B153700462D62 /* ContentView.swift */; };
 		40CE14C6293B153700462D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE14AB293B153700462D62 /* Preview Assets.xcassets */; };
+		40E9D568295564F000317110 /* WatchRoutineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9D567295564F000317110 /* WatchRoutineList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		40CE145A293B109400462D62 /* Gym-Routine-Tracker-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gym-Routine-Tracker-Watch-App-Info.plist"; sourceTree = "<group>"; };
 		40CE1490293B153700462D62 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40CE14AB293B153700462D62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40E9D567295564F000317110 /* WatchRoutineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRoutineList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				40A0D0E829540BD900624539 /* WatchExerciseRun.swift */,
 				4058FD572954EA8900448F8A /* WatchExerciseDetail.swift */,
 				40A0D0EE29541AD700624539 /* WatchRoutineDetail.swift */,
+				40E9D567295564F000317110 /* WatchRoutineList.swift */,
 				4058FD5B2954F3D700448F8A /* WatchStandardViews.swift */,
 				40CE14AA293B153700462D62 /* Preview Content */,
 				40CE140C293B0DBC00462D62 /* Assets.xcassets */,
@@ -249,6 +252,7 @@
 				40CE14B0293B153700462D62 /* ContentView.swift in Sources */,
 				40A0D0E929540BD900624539 /* WatchExerciseRun.swift in Sources */,
 				40A0D0EF29541AD700624539 /* WatchRoutineDetail.swift in Sources */,
+				40E9D568295564F000317110 /* WatchRoutineList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
