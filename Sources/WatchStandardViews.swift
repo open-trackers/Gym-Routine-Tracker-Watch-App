@@ -10,23 +10,23 @@ import SwiftUI
 import GroutLib
 import GroutUI
 
-final class WatchStandardViews: StandardViews {
-    @Binding private var middleMode: ExerciseMiddleRowMode
+struct WatchStandardViews: StandardViews {
+    @Binding var middleMode: ExerciseMiddleRowMode
 
-    public init(middleMode: Binding<ExerciseMiddleRowMode>) {
-        _middleMode = middleMode
-        super.init()
-    }
+//    public init(middleMode: Binding<ExerciseMiddleRowMode>) {
+//        _middleMode = middleMode
+//        super.init()
+//    }
 
-    override func routineDetail(routine: Routine) -> AnyView {
+    func routineDetail(routine: Routine) -> AnyView {
         WatchRoutineDetail(routine: routine, standardViews: self).eraseToAnyView()
     }
 
-    override func exerciseDetail(exercise: Exercise) -> AnyView {
+    func exerciseDetail(exercise: Exercise) -> AnyView {
         WatchExerciseDetail(exercise: exercise).eraseToAnyView()
     }
 
-    override func exerciseRun(exercise: Exercise,
+    func exerciseRun(exercise: Exercise,
                               nextAction: @escaping (Int16?) -> Void,
                               hasNextIncomplete: @escaping () -> Bool,
                               selectedExercise: Binding<Exercise?>) -> AnyView
@@ -39,15 +39,15 @@ final class WatchStandardViews: StandardViews {
                          standardViews: self).eraseToAnyView()
     }
 
-    override func routineList() -> AnyView {
+    func routineList() -> AnyView {
         WatchRoutineList(standardViews: self).eraseToAnyView()
     }
 
-    override func exerciseList(routine: Routine) -> AnyView {
+    func exerciseList(routine: Routine) -> AnyView {
         WatchExerciseList(routine: routine).eraseToAnyView()
     }
 
-    override func actionButton(action: @escaping () -> Void,
+    func actionButton(action: @escaping () -> Void,
                                imageSystemName: String,
                                buttonText: String? = nil,
                                tint: Color,
@@ -60,7 +60,7 @@ final class WatchStandardViews: StandardViews {
                           onLongPress: onLongPress).eraseToAnyView()
     }
 
-    override func routineControl(routine: Routine,
+    func routineControl(routine: Routine,
                                  selectedTab: Binding<URL>,
                                  onStop: @escaping () -> Void,
                                  nextAction: @escaping (Int16?) -> Void,
@@ -79,11 +79,11 @@ final class WatchStandardViews: StandardViews {
                             standardViews: standardViews).eraseToAnyView()
     }
 
-    override func settingsForm() -> AnyView {
+    func settingsForm() -> AnyView {
         WatchSettingsForm().eraseToAnyView()
     }
 
-//    override func navigationStack(navData: Binding<Data?>,
+//    func navigationStack(navData: Binding<Data?>,
 //                                  rootContent: @escaping () -> AnyView) -> AnyView
 //    {
 //        WatchNavStack(standardViews: self,
