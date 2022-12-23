@@ -16,6 +16,7 @@ struct WatchRoutineDetail: View {
     @SceneStorage("RoutineDetailTab") private var selectedTab: Int = 0
 
     @ObservedObject var routine: Routine
+    var standardViews: StandardViews
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -39,7 +40,7 @@ struct WatchRoutineDetail: View {
             .tag(0)
 
             FakeSection("Exercises") {
-                ExerciseList(routine: routine)
+                standardViews.exerciseList(routine: routine)
                 // .environmentObject(router)
             }
             .tabItem {

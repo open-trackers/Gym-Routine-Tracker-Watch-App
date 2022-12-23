@@ -19,7 +19,7 @@ final class WatchStandardViews: StandardViews {
     }
 
     override func routineDetail(routine: Routine) -> AnyView {
-        WatchRoutineDetail(routine: routine).eraseToAnyView()
+        WatchRoutineDetail(routine: routine, standardViews: self).eraseToAnyView()
     }
 
     override func exerciseDetail(exercise: Exercise) -> AnyView {
@@ -41,6 +41,10 @@ final class WatchStandardViews: StandardViews {
 
     override func routineList() -> AnyView {
         WatchRoutineList(standardViews: self).eraseToAnyView()
+    }
+
+    override func exerciseList(routine: Routine) -> AnyView {
+        WatchExerciseList(routine: routine).eraseToAnyView()
     }
 
     override func actionButton(action: @escaping () -> Void,
@@ -73,6 +77,10 @@ final class WatchStandardViews: StandardViews {
                             remainingCount: remainingCount,
                             startedAt: startedAt,
                             standardViews: standardViews).eraseToAnyView()
+    }
+
+    override func settingsForm() -> AnyView {
+        WatchSettingsForm().eraseToAnyView()
     }
 
 //    override func navigationStack(navData: Binding<Data?>,
