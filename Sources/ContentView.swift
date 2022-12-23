@@ -22,8 +22,9 @@ struct ContentView: View {
     @State private var middleMode: ExerciseMiddleRowMode = .intensity
 
     var body: some View {
-        WatchNavStack(navData: $routinesNavData, middleMode: $middleMode) {
-            RoutineList(standardViews: WatchStandardViews(middleMode: $middleMode))
+        let standardViews = WatchStandardViews(middleMode: $middleMode)
+        WatchNavStack(standardViews: standardViews, navData: $routinesNavData) {
+            RoutineList(standardViews: standardViews)
                 .eraseToAnyView()
         }
     }

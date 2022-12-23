@@ -10,22 +10,26 @@ import SwiftUI
 import GroutLib
 import GroutUI
 
-struct WatchStandardViews: StandardViews {
-    
-    @Binding var middleMode: ExerciseMiddleRowMode
-    
-    func routineDetail(routine: Routine) -> AnyView {
+final class WatchStandardViews: StandardViews {
+    @Binding private var middleMode: ExerciseMiddleRowMode
+
+    public init(middleMode: Binding<ExerciseMiddleRowMode>) {
+        _middleMode = middleMode
+        super.init()
+    }
+
+    override func routineDetail(routine: Routine) -> AnyView {
         WatchRoutineDetail(routine: routine).eraseToAnyView()
     }
 
-    func exerciseDetail(exercise: Exercise) -> AnyView {
+    override func exerciseDetail(exercise: Exercise) -> AnyView {
         WatchExerciseDetail(exercise: exercise).eraseToAnyView()
     }
 
-    func exerciseRun(exercise: Exercise,
-                     nextAction: @escaping (Int16?) -> Void,
-                     hasNextIncomplete: @escaping () -> Bool,
-                     selectedExercise: Binding<Exercise?>) -> AnyView
+    override func exerciseRun(exercise: Exercise,
+                              nextAction: @escaping (Int16?) -> Void,
+                              hasNextIncomplete: @escaping () -> Bool,
+                              selectedExercise: Binding<Exercise?>) -> AnyView
     {
         WatchExerciseRun(exercise: exercise,
                          middleMode: $middleMode,
@@ -34,11 +38,12 @@ struct WatchStandardViews: StandardViews {
                          selectedExercise: selectedExercise).eraseToAnyView()
     }
 
-    func navigationStack(navData: Binding<Data?>,
-                          rootContent: @escaping () -> AnyView) -> AnyView
-    {
-        WatchNavStack(navData: navData,
-                             middleMode: $middleMode,
-                             rootContent: rootContent).eraseToAnyView()
-    }
+//    override func navigationStack(navData: Binding<Data?>,
+//                                  rootContent: @escaping () -> AnyView) -> AnyView
+//    {
+//        WatchNavStack(standardViews: self,
+//                      navData: navData,
+//                      // middleMode: $middleMode,
+//                      rootContent: rootContent).eraseToAnyView()
+//    }
 }
