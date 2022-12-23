@@ -13,10 +13,23 @@ import GroutUI
 struct WatchExerciseList: View {
     @EnvironmentObject private var router: MyRouter
 
+    var standardViews: StandardViews
     @ObservedObject var routine: Routine
 
     var body: some View {
-        ExerciseList(routine: routine)
+        ExerciseList(routine: routine, standardViews: standardViews) {
+            addButton
+                .font(.title3)
+                .tint(exerciseColor)
+                .foregroundStyle(.tint)
+        }
+    }
+
+    private var addButton: some View {
+        AddExerciseButton(routine: routine) {
+            Label("Add Exercise", systemImage: "plus.circle.fill")
+                .symbolRenderingMode(.hierarchical)
+        }
     }
 
     // MARK: - Properties

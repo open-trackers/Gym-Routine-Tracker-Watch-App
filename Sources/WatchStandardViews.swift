@@ -44,7 +44,8 @@ struct WatchStandardViews: StandardViews {
     }
 
     func exerciseList(routine: Routine) -> AnyView {
-        WatchExerciseList(routine: routine).eraseToAnyView()
+        WatchExerciseList(standardViews: self,
+                          routine: routine).eraseToAnyView()
     }
 
     func actionButton(action: @escaping () -> Void,
