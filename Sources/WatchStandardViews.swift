@@ -38,6 +38,10 @@ final class WatchStandardViews: StandardViews {
                          selectedExercise: selectedExercise).eraseToAnyView()
     }
 
+    override func routineList() -> AnyView {
+        RoutineList(standardViews: self).eraseToAnyView()
+    }
+
 //    override func navigationStack(navData: Binding<Data?>,
 //                                  rootContent: @escaping () -> AnyView) -> AnyView
 //    {

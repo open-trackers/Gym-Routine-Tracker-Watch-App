@@ -23,9 +23,10 @@ struct ContentView: View {
 
     var body: some View {
         let standardViews = WatchStandardViews(middleMode: $middleMode)
-        WatchNavStack(standardViews: standardViews, navData: $routinesNavData) {
-            RoutineList(standardViews: standardViews)
-                .eraseToAnyView()
+        BaseNavStack(standardViews: standardViews, navData: $routinesNavData) {
+//            RoutineList(standardViews: standardViews)
+//                .eraseToAnyView()
+            standardViews.routineList()
         }
     }
 }
