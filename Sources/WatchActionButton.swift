@@ -11,16 +11,37 @@ import GroutLib
 import GroutUI
 
 struct WatchActionButton: View {
+    // MARK: - Parameters
+
     var action: () -> Void
     var imageSystemName: String // "arrow.backward"
     var buttonText: String? // "Previous"
     var tint: Color
     var onLongPress: (() -> Void)?
 
-    var body: some View {
-        ActionButton(action: action, imageSystemName: imageSystemName, buttonText: buttonText, tint: tint, onLongPress: onLongPress)
+    // MARK: - Views
 
-        // TODO: button body
+    var body: some View {
+        ActionButton(action: action,
+                     imageSystemName: imageSystemName,
+                     buttonText: buttonText,
+                     tint: tint,
+                     xbody: xbody,
+                     label: label,
+                     onLongPress: onLongPress)
+    }
+
+    private func xbody(_ button: AnyView) -> some View {
+        button
+            .foregroundStyle(.tint)
+            .tint(tint)
+            .font(.title)
+            .fontWeight(.bold)
+    }
+
+    private func label(_ imageSystemName: String) -> some View {
+        Image(systemName: imageSystemName)
+            .symbolRenderingMode(.hierarchical)
     }
 }
 
