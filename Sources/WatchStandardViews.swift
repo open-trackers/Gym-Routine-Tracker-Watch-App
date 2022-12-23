@@ -27,9 +27,9 @@ struct WatchStandardViews: StandardViews {
     }
 
     func exerciseRun(exercise: Exercise,
-                              nextAction: @escaping (Int16?) -> Void,
-                              hasNextIncomplete: @escaping () -> Bool,
-                              selectedExercise: Binding<Exercise?>) -> AnyView
+                     nextAction: @escaping (Int16?) -> Void,
+                     hasNextIncomplete: @escaping () -> Bool,
+                     selectedExercise: Binding<Exercise?>) -> AnyView
     {
         WatchExerciseRun(exercise: exercise,
                          middleMode: $middleMode,
@@ -48,10 +48,10 @@ struct WatchStandardViews: StandardViews {
     }
 
     func actionButton(action: @escaping () -> Void,
-                               imageSystemName: String,
-                               buttonText: String? = nil,
-                               tint: Color,
-                               onLongPress: (() -> Void)? = nil) -> AnyView
+                      imageSystemName: String,
+                      buttonText: String? = nil,
+                      tint: Color,
+                      onLongPress: (() -> Void)? = nil) -> AnyView
     {
         WatchActionButton(action: action,
                           imageSystemName: imageSystemName,
@@ -61,13 +61,13 @@ struct WatchStandardViews: StandardViews {
     }
 
     func routineControl(routine: Routine,
-                                 selectedTab: Binding<URL>,
-                                 onStop: @escaping () -> Void,
-                                 nextAction: @escaping (Int16?) -> Void,
-                                 maxOrder: Int16,
-                                 remainingCount: @escaping () -> Int,
-                                 startedAt: Date,
-                                 standardViews: StandardViews) -> AnyView
+                        selectedTab: Binding<URL>,
+                        onStop: @escaping () -> Void,
+                        nextAction: @escaping (Int16?) -> Void,
+                        maxOrder: Int16,
+                        remainingCount: @escaping () -> Int,
+                        startedAt: Date,
+                        standardViews: StandardViews) -> AnyView
     {
         WatchRoutineControl(routine: routine,
                             selectedTab: selectedTab,
