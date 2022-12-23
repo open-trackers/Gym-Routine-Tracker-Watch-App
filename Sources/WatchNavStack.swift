@@ -10,7 +10,7 @@ import SwiftUI
 import GroutLib
 import GroutUI
 
-struct WatchNavigationStack: View {
+struct WatchNavStack: View {
     // MARK: - Parameters
 
     @Binding private var navData: Data?
@@ -27,14 +27,11 @@ struct WatchNavigationStack: View {
     }
 
     // MARK: - Locals
-
-    //TODO should be param?
-    //@State private var middleMode: ExerciseMiddleRowMode = .intensity
     
     // MARK: - Views
 
     var body: some View {
-        MyNavigationStack(navData: $navData,
+        BaseNavStack(navData: $navData,
                           standardViews: WatchStandardViews(middleMode: $middleMode),
                           rootContent: rootContent)
     }

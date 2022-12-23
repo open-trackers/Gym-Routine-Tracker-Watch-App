@@ -37,7 +37,7 @@ struct WatchStandardViews: StandardViews {
     func navigationStack(navData: Binding<Data?>,
                           rootContent: @escaping () -> AnyView) -> AnyView
     {
-        WatchNavigationStack(navData: navData,
+        WatchNavStack(navData: navData,
                              middleMode: $middleMode,
                              rootContent: rootContent).eraseToAnyView()
     }

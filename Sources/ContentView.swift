@@ -22,7 +22,7 @@ struct ContentView: View {
     @State private var middleMode: ExerciseMiddleRowMode = .intensity
 
     var body: some View {
-        WatchNavigationStack(navData: $routinesNavData, middleMode: $middleMode) {
+        WatchNavStack(navData: $routinesNavData, middleMode: $middleMode) {
             RoutineList(standardViews: WatchStandardViews(middleMode: $middleMode))
                 .eraseToAnyView()
         }
