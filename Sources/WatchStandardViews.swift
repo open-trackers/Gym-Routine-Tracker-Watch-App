@@ -42,6 +42,15 @@ final class WatchStandardViews: StandardViews {
         WatchRoutineList(standardViews: self).eraseToAnyView()
     }
 
+    override func actionButton(action: @escaping () -> Void,
+                               imageSystemName: String,
+                               buttonText: String? = nil,
+                               tint: Color,
+                               onLongPress: (() -> Void)? = nil) -> AnyView
+    {
+        WatchActionButton(action: action, imageSystemName: imageSystemName, buttonText: buttonText, tint: tint, onLongPress: onLongPress).eraseToAnyView()
+    }
+
 //    override func navigationStack(navData: Binding<Data?>,
 //                                  rootContent: @escaping () -> AnyView) -> AnyView
 //    {
