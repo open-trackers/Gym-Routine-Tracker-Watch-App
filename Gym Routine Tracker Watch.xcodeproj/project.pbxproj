@@ -20,7 +20,7 @@
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
 		40BD218F293FDD0500B17BEA /* GroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40BD218E293FDD0500B17BEA /* GroutLib */; };
 		40CE1404293B0DBB00462D62 /* Gym Routine Tracker Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		40CE1409293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */; };
+		40CE1409293B0DBB00462D62 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1408293B0DBB00462D62 /* WatchApp.swift */; };
 		40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE140C293B0DBC00462D62 /* Assets.xcassets */; };
 		40CE1458293B100800462D62 /* GroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE1457293B100800462D62 /* GroutLib */; };
 		40CE145D293B113600462D62 /* Compactor in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE145C293B113600462D62 /* Compactor */; };
@@ -67,7 +67,7 @@
 		40A70CAA293BA22D008688F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_Routine_Tracker_App.swift; sourceTree = "<group>"; };
+		40CE1408293B0DBB00462D62 /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
 		40CE140C293B0DBC00462D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40CE1459293B105800462D62 /* Gym Routine Tracker Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Gym Routine Tracker Watch App.entitlements"; sourceTree = "<group>"; };
 		40CE145A293B109400462D62 /* Gym-Routine-Tracker-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gym-Routine-Tracker-Watch-App-Info.plist"; sourceTree = "<group>"; };
@@ -92,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		409CFEAB2956A205007DE6EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40CE1490293B153700462D62 /* ContentView.swift */,
+				409CFEA929562255007DE6EF /* ExerciseRunMiddleRow.swift */,
+				40E9D56B29556C5900317110 /* WatchActionButton.swift */,
+				4058FD572954EA8900448F8A /* WatchExerciseDetail.swift */,
+				409CFEA329561F3F007DE6EF /* WatchExerciseList.swift */,
+				40A0D0E829540BD900624539 /* WatchExerciseRun.swift */,
+				409CFE9F29561C3B007DE6EF /* WatchRoutineControl.swift */,
+				40A0D0EE29541AD700624539 /* WatchRoutineDetail.swift */,
+				40E9D567295564F000317110 /* WatchRoutineList.swift */,
+				409CFEA72956211F007DE6EF /* WatchSettingsForm.swift */,
+				4058FD5B2954F3D700448F8A /* WatchStandardViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		40CE13F6293B0DBB00462D62 = {
 			isa = PBXGroup;
 			children = (
@@ -115,18 +133,8 @@
 		40CE1407293B0DBB00462D62 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				40CE1408293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift */,
-				40CE1490293B153700462D62 /* ContentView.swift */,
-				40A0D0E829540BD900624539 /* WatchExerciseRun.swift */,
-				409CFEA929562255007DE6EF /* ExerciseRunMiddleRow.swift */,
-				4058FD572954EA8900448F8A /* WatchExerciseDetail.swift */,
-				40A0D0EE29541AD700624539 /* WatchRoutineDetail.swift */,
-				40E9D567295564F000317110 /* WatchRoutineList.swift */,
-				40E9D56B29556C5900317110 /* WatchActionButton.swift */,
-				409CFE9F29561C3B007DE6EF /* WatchRoutineControl.swift */,
-				409CFEA329561F3F007DE6EF /* WatchExerciseList.swift */,
-				409CFEA72956211F007DE6EF /* WatchSettingsForm.swift */,
-				4058FD5B2954F3D700448F8A /* WatchStandardViews.swift */,
+				40CE1408293B0DBB00462D62 /* WatchApp.swift */,
+				409CFEAB2956A205007DE6EF /* Views */,
 				40CE14AA293B153700462D62 /* Preview Content */,
 				40CE140C293B0DBC00462D62 /* Assets.xcassets */,
 				40CE145A293B109400462D62 /* Gym-Routine-Tracker-Watch-App-Info.plist */,
@@ -261,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CE1409293B0DBB00462D62 /* Gym_Routine_Tracker_App.swift in Sources */,
+				40CE1409293B0DBB00462D62 /* WatchApp.swift in Sources */,
 				409CFEA429561F3F007DE6EF /* WatchExerciseList.swift in Sources */,
 				409CFEA029561C3B007DE6EF /* WatchRoutineControl.swift in Sources */,
 				4058FD5C2954F3D700448F8A /* WatchStandardViews.swift in Sources */,
