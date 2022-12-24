@@ -14,7 +14,7 @@ struct WatchSettingsForm: View {
     @EnvironmentObject private var router: MyRouter
 
     var body: some View {
-        SettingsForm() {
+        SettingsForm {
             EmptyView()
         }
     }
