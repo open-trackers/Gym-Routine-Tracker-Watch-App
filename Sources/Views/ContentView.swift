@@ -23,7 +23,7 @@ struct ContentView: View {
 
     var body: some View {
         let standardViews = WatchStandardViews(middleMode: $middleMode)
-        NavStack(standardViews: standardViews, navData: $routinesNavData) {
+        NavStack(name: "main", standardViews: standardViews, navData: $routinesNavData) {
 //            RoutineList(standardViews: standardViews)
 //                .eraseToAnyView()
             standardViews.routineList()

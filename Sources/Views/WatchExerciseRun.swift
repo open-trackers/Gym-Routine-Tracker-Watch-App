@@ -141,3 +141,35 @@ struct WatchExerciseRun: View {
 //        WatchRunView()
 //    }
 // }
+
+struct WatchExerciseRun_Previews: PreviewProvider {
+    struct TestHolder: View {
+        var exercise: Exercise
+        @State var selectedExercise: Exercise?
+        @State var middleMode: ExerciseMiddleRowMode = .intensity
+        var body: some View {
+            WatchExerciseRun(exercise: exercise,
+                             middleMode: $middleMode,
+                             nextAction: { _ in },
+                             hasNextIncomplete: { true },
+                             selectedExercise: $selectedExercise,
+                             standardViews: WatchStandardViews(middleMode: $middleMode))
+        }
+    }
+
+    static var previews: some View {
+        let ctx = PersistenceManager.preview.container.viewContext
+        let routine = Routine.create(ctx, userOrder: 0)
+        routine.name = "Back & Bicep"
+        let e1 = Exercise.create(ctx, userOrder: 0)
+        e1.name = "Lat Pulldown"
+        e1.routine = routine
+        e1.primarySetting = 4
+        //        e1.secondarySetting = 6
+        // e1.units = Units.kilograms.rawValue
+        e1.intensityStep = 7.1
+        return NavigationStack {
+            TestHolder(exercise: e1)
+        }
+    }
+}
