@@ -19,55 +19,73 @@ struct WatchRoutineDetail: View {
     var standardViews: StandardViews
 
     var body: some View {
-        TabView(selection: $selectedTab) {
-            Form {
-                Section("Name") {
-                    TextFieldWithPresets($routine.wrappedName,
-                                         prompt: "Enter routine name",
-                                         color: routineColor,
-                                         presets: routinePresets)
-                }
-
-                Section("Image") {
-                    ImageStepper(initialName: routine.imageName, imageNames: systemImageNames) {
-                        routine.imageName = $0
+        RoutineDetail(routine: routine) {
+            TabView(selection: $selectedTab) {
+                Form {
+                    Section("Name") {
+                        TextFieldWithPresets($routine.wrappedName,
+                                             prompt: "Enter routine name",
+                                             color: routineColor,
+                                             presets: routinePresets)
+                    }
+                    
+                    Section("Image") {
+                        ImageStepper(initialName: routine.imageName, imageNames: systemImageNames) {
+                            routine.imageName = $0
+                        }
                     }
                 }
+                .tabItem {
+                    Text("Properties")
+                }
+                .tag(0)
+                
+                FakeSection("Exercises") {
+                    standardViews.exerciseList(routine: routine)
+                    // .environmentObject(router)
+                }
+                .tabItem {
+                    Text("Exercises")
+                }
+                .tag(1)
             }
-            .tabItem {
-                Text("Properties")
-            }
-            .tag(0)
-
-            FakeSection("Exercises") {
-                standardViews.exerciseList(routine: routine)
-                // .environmentObject(router)
-            }
-            .tabItem {
-                Text("Exercises")
-            }
-            .tag(1)
+            .tabViewStyle(.page)
+//            .navigationTitle {
+//                Text("Routine")
+//                    .foregroundColor(routineColor)
+//            }
+//            .onDisappear(perform: onDisappearAction)
         }
-        .tabViewStyle(.page)
-        .navigationTitle {
-            Text("Routine")
-                .foregroundColor(routineColor)
-        }
-        .onDisappear(perform: onDisappearAction)
     }
 
     // MARK: - Properties
 
     // MARK: - Actions
 
-    private func onDisappearAction() {
-        logger.debug("Routine Detail, onDisappear")
-        PersistenceManager.shared.save()
-    }
+//    private func onDisappearAction() {
+//        logger.debug("Routine Detail, onDisappear")
+//        PersistenceManager.shared.save()
+//    }
 }
 
-// struct WatchRoutineDetail_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RoutineDetail()
-//    }
-// }
+struct WatchRoutineDetail_Previews: PreviewProvider {
+   struct TestHolder: View {
+       var routine: Routine
+       @State var navData: Data?
+       var standardViews = WatchStandardViews(middleMode: .constant(.intensity))
+       var body: some View {
+               WatchRoutineDetail(routine: routine, standardViews: standardViews).eraseToAnyView()
+       }
+   }
+
+   static var previews: some View {
+       let ctx = PersistenceManager.preview.container.viewContext
+       let routine = Routine.create(ctx, userOrder: 0)
+       routine.name = "Back & Bicep"
+       let exercise = Exercise.create(ctx, userOrder: 0)
+       exercise.name = "Lat Pulldown"
+       exercise.routine = routine
+       return TestHolder(routine: routine)
+           .environment(\.managedObjectContext, ctx)
+   }
+}
