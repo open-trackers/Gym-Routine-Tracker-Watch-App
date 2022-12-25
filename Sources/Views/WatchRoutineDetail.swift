@@ -74,7 +74,9 @@ struct WatchRoutineDetail_Previews: PreviewProvider {
        @State var navData: Data?
        var standardViews = WatchStandardViews(middleMode: .constant(.intensity))
        var body: some View {
+           NavigationStack {
                WatchRoutineDetail(routine: routine, standardViews: standardViews).eraseToAnyView()
+           }
        }
    }
 
