@@ -28,7 +28,7 @@ struct WatchRoutineDetail: View {
                                              color: routineColor,
                                              presets: routinePresets)
                     }
-                    
+
                     Section("Image") {
                         ImageStepper(initialName: routine.imageName, imageNames: systemImageNames) {
                             routine.imageName = $0
@@ -39,7 +39,7 @@ struct WatchRoutineDetail: View {
                     Text("Properties")
                 }
                 .tag(0)
-                
+
                 FakeSection("Exercises") {
                     standardViews.exerciseList(routine: routine)
                     // .environmentObject(router)
@@ -69,25 +69,25 @@ struct WatchRoutineDetail: View {
 }
 
 struct WatchRoutineDetail_Previews: PreviewProvider {
-   struct TestHolder: View {
-       var routine: Routine
-       @State var navData: Data?
-       var standardViews = WatchStandardViews(middleMode: .constant(.intensity))
-       var body: some View {
-           NavigationStack {
-               WatchRoutineDetail(routine: routine, standardViews: standardViews).eraseToAnyView()
-           }
-       }
-   }
+    struct TestHolder: View {
+        var routine: Routine
+        @State var navData: Data?
+        var standardViews = WatchStandardViews(middleMode: .constant(.intensity))
+        var body: some View {
+            NavigationStack {
+                WatchRoutineDetail(routine: routine, standardViews: standardViews).eraseToAnyView()
+            }
+        }
+    }
 
-   static var previews: some View {
-       let ctx = PersistenceManager.preview.container.viewContext
-       let routine = Routine.create(ctx, userOrder: 0)
-       routine.name = "Back & Bicep"
-       let exercise = Exercise.create(ctx, userOrder: 0)
-       exercise.name = "Lat Pulldown"
-       exercise.routine = routine
-       return TestHolder(routine: routine)
-           .environment(\.managedObjectContext, ctx)
-   }
+    static var previews: some View {
+        let ctx = PersistenceManager.preview.container.viewContext
+        let routine = Routine.create(ctx, userOrder: 0)
+        routine.name = "Back & Bicep"
+        let exercise = Exercise.create(ctx, userOrder: 0)
+        exercise.name = "Lat Pulldown"
+        exercise.routine = routine
+        return TestHolder(routine: routine)
+            .environment(\.managedObjectContext, ctx)
+    }
 }
