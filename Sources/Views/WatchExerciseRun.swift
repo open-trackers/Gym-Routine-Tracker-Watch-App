@@ -112,23 +112,6 @@ struct WatchExerciseRun: View {
         }
     }
 
-//    private var bottomRow: some View {
-//        HStack {
-//            ActionButton(action: isDone ? undoAction : doneAction,
-//                         imageSystemName: isDone ? "arrow.uturn.backward" : "checkmark",
-//                         buttonText: isDone ? "Undo" : "Done",
-//                         tint: shortPressDone ? disabledColor : (isDone ? exerciseUndoColor : exerciseDoneColor),
-//                         onLongPress: isDone ? nil : doneLongPressAction)
-//            .disabled(shortPressDone)
-//
-//            ActionButton(action: { nextAction(exercise.userOrder) },
-//                         imageSystemName: "arrow.forward",
-//                         buttonText: "Next",
-//                         tint: nextColor)
-//            .disabled(!hasNext)
-//        }
-//    }
-
     // MARK: - Helpers
 
     private var isDone: Bool {
