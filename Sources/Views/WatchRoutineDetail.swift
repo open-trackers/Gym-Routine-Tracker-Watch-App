@@ -33,6 +33,7 @@ struct WatchRoutineDetail: View {
                         ImageStepper(initialName: routine.imageName, imageNames: systemImageNames) {
                             routine.imageName = $0
                         }
+                        .imageScale(.small)
                     }
                 }
                 .tabItem {
