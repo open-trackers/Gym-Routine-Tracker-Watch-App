@@ -24,8 +24,8 @@ struct WatchSettingsForm: View {
     // MARK: - Actions
 }
 
-// struct WatchSettingsForm_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SettingsForm()
-//    }
-// }
+struct WatchSettingsForm_Previews: PreviewProvider {
+    static var previews: some View {
+        WatchSettingsForm()
+    }
+}

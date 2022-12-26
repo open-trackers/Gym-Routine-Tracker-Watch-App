@@ -13,11 +13,6 @@ import GroutUI
 struct WatchStandardViews: StandardViews {
     @Binding var middleMode: ExerciseMiddleRowMode
 
-//    public init(middleMode: Binding<ExerciseMiddleRowMode>) {
-//        _middleMode = middleMode
-//        super.init()
-//    }
-
     func routineDetail(routine: Routine) -> AnyView {
         WatchRoutineDetail(routine: routine, standardViews: self).eraseToAnyView()
     }
@@ -83,13 +78,4 @@ struct WatchStandardViews: StandardViews {
     func settingsForm() -> AnyView {
         WatchSettingsForm().eraseToAnyView()
     }
-
-//    func navigationStack(navData: Binding<Data?>,
-//                                  rootContent: @escaping () -> AnyView) -> AnyView
-//    {
-//        WatchNavStack(standardViews: self,
-//                      navData: navData,
-//                      // middleMode: $middleMode,
-//                      rootContent: rootContent).eraseToAnyView()
-//    }
 }

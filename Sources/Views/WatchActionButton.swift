@@ -45,8 +45,8 @@ struct WatchActionButton: View {
     }
 }
 
-// struct WatchActionButton_Previews: PreviewProvider {
-//    static var previews: some View {
-//        WatchActionButton()
-//    }
-// }
+struct WatchActionButton_Previews: PreviewProvider {
+    static var previews: some View {
+        WatchActionButton(action: {}, imageSystemName: "arrow.right", tint: .blue)
+    }
+}

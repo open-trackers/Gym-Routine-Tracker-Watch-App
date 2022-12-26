@@ -63,8 +63,10 @@ struct ExerciseRunMiddleRow<Content: View>: View {
     }
 }
 
-// struct MiddleRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MiddleRow()
-//    }
-// }
+struct ExerciseRunMiddleRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ExerciseRunMiddleRow(imageName: "gearshape", imageColor: .blue, onDetail: {}, onTap: {}) {
+            Text("Settings")
+        }
+    }
+}

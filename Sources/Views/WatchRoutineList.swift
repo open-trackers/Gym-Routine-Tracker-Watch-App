@@ -61,8 +61,24 @@ struct WatchRoutineList: View {
     }
 }
 
-// struct WatchRoutineList_Previews: PreviewProvider {
-//    static var previews: some View {
-//        WatchRoutineList()
-//    }
-// }
+struct WatchRoutineList_Previews: PreviewProvider {
+    struct TestHolder: View {
+        let standardViews = WatchStandardViews(middleMode: .constant(.intensity))
+        var body: some View {
+            NavigationStack {
+                WatchRoutineList(standardViews: standardViews)
+            }
+        }
+    }
+
+    static var previews: some View {
+        let ctx = PersistenceManager.preview.container.viewContext
+        let routine = Routine.create(ctx, userOrder: 0)
+        routine.name = "Back & Bicep"
+        let exercise = Exercise.create(ctx, userOrder: 0)
+        exercise.name = "Lat Pulldown"
+        exercise.routine = routine
+        return TestHolder()
+            .environment(\.managedObjectContext, ctx)
+    }
+}
