@@ -78,4 +78,17 @@ struct WatchStandardViews: StandardViews {
     func settingsForm() -> AnyView {
         WatchSettingsForm().eraseToAnyView()
     }
+
+    func routineRun(routine: Routine,
+                    selectedTab: Binding<URL>,
+                    startedAt: Binding<Date>,
+                    standardViews _: StandardViews,
+                    onStop: @escaping (Routine) -> Void) -> AnyView
+    {
+        WatchRoutineRun(routine: routine,
+                        selectedTab: selectedTab,
+                        startedAt: startedAt,
+                        standardViews: self,
+                        onStop: onStop).eraseToAnyView()
+    }
 }
