@@ -23,7 +23,7 @@ struct WatchExerciseRun: View {
     // MARK: - Views
 
     var body: some View {
-        ExerciseRunView(exercise: exercise,
+        ExerciseRun(exercise: exercise,
                         nextAction: nextAction,
                         hasNextIncomplete: hasNextIncomplete,
                         selectedExercise: $selectedExercise,

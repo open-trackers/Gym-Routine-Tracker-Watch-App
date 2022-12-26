@@ -36,7 +36,7 @@ struct WatchRoutineRun: View {
     // MARK: - Views
 
     var body: some View {
-        RoutineRunView(routine: routine,
+        RoutineRun(routine: routine,
                        selectedTab: $selectedTab,
                        startedAt: $startedAt,
                        standardViews: standardViews,
