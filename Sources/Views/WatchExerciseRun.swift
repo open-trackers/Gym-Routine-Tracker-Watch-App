@@ -24,10 +24,10 @@ struct WatchExerciseRun: View {
 
     var body: some View {
         ExerciseRun(exercise: exercise,
-                        nextAction: nextAction,
-                        hasNextIncomplete: hasNextIncomplete,
-                        selectedExercise: $selectedExercise,
-                        standardViews: standardViews) { geo, titleText, navigationRow in
+                    nextAction: nextAction,
+                    hasNextIncomplete: hasNextIncomplete,
+                    selectedExercise: $selectedExercise,
+                    standardViews: standardViews) { geo, titleText, navigationRow in
             VStack {
                 titleText
                     .frame(height: geo.size.height * 3 / 13)
