@@ -77,10 +77,12 @@ struct WatchStandardViews: StandardViews {
     }
 
     func routineRun(routine: Routine,
+                    isNew: Binding<Bool>,
                     startedAt: Binding<Date>,
                     onStop: @escaping (Routine) -> Void) -> AnyView
     {
         WatchRoutineRun(routine: routine,
+                        isNew: isNew,
                         startedAt: startedAt,
                         standardViews: self,
                         onStop: onStop).eraseToAnyView()
