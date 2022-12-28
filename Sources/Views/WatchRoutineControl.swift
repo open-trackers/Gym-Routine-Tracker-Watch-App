@@ -12,23 +12,19 @@ import GroutUI
 
 struct WatchRoutineControl: View {
     var routine: Routine
-    //@Binding var selectedTab: URL?
     let onAdd: () -> Void
     let onStop: () -> Void
     let onNextIncomplete: (Int16?) -> Void
-    //var maxOrder: Int16
-    var remainingCount: () -> Int
+    var onRemainingCount: () -> Int
     var startedAt: Date
     var standardViews: StandardViews
 
     var body: some View {
         RoutineControl(routine: routine,
-                       //selectedTab: $selectedTab,
                        onAdd: onAdd,
                        onStop: onStop,
                        onNextIncomplete: onNextIncomplete,
-                       //maxOrder: maxOrder,
-                       remainingCount: remainingCount,
+                       onRemainingCount: onRemainingCount,
                        startedAt: startedAt,
                        standardViews: standardViews)
     }
@@ -41,12 +37,10 @@ struct WatchRoutineControl_Previews: PreviewProvider {
         var startedAt = Date.now.addingTimeInterval(-1200)
         var body: some View {
             WatchRoutineControl(routine: routine,
-                               // selectedTab: $selectedTab,
                                 onAdd: {},
                                 onStop: {},
                                 onNextIncomplete: { _ in },
-                               // maxOrder: 0,
-                                remainingCount: { 3 },
+                                onRemainingCount: { 3 },
                                 startedAt: startedAt, standardViews: WatchStandardViews(middleMode: .constant(.intensity)))
         }
     }

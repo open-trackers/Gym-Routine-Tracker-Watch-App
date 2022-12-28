@@ -60,17 +60,14 @@ struct WatchStandardViews: StandardViews {
                         onAdd: @escaping () -> Void,
                         onStop: @escaping () -> Void,
                         onNextIncomplete: @escaping (Int16?) -> Void,
-                        //maxOrder: Int16,
-                        remainingCount: @escaping () -> Int,
+                        onRemainingCount: @escaping () -> Int,
                         startedAt: Date) -> AnyView
     {
         WatchRoutineControl(routine: routine,
-                            //selectedTab: selectedTab,
                             onAdd: onAdd,
                             onStop: onStop,
                             onNextIncomplete: onNextIncomplete,
-                            //maxOrder: maxOrder,
-                            remainingCount: remainingCount,
+                            onRemainingCount: onRemainingCount,
                             startedAt: startedAt,
                             standardViews: self).eraseToAnyView()
     }
@@ -80,7 +77,7 @@ struct WatchStandardViews: StandardViews {
     }
 
     func routineRun(routine: Routine,
-                    initialTab: URL,
+                    initialTab: URL?,
                     startedAt: Binding<Date>,
                     onStop: @escaping (Routine) -> Void) -> AnyView
     {
