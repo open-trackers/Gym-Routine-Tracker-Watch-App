@@ -15,7 +15,7 @@ struct WatchExerciseRun: View {
 
     @ObservedObject var exercise: Exercise
     @Binding var middleMode: ExerciseMiddleRowMode
-    var nextAction: (Int16?) -> Void
+    var onNextIncomplete: (Int16?) -> Void
     var hasNextIncomplete: () -> Bool
     @Binding var selectedExercise: Exercise?
     var standardViews: StandardViews
@@ -24,7 +24,7 @@ struct WatchExerciseRun: View {
 
     var body: some View {
         ExerciseRun(exercise: exercise,
-                    nextAction: nextAction,
+                    onNextIncomplete: onNextIncomplete,
                     hasNextIncomplete: hasNextIncomplete,
                     selectedExercise: $selectedExercise,
                     standardViews: standardViews) { geo, titleText, navigationRow in
@@ -133,7 +133,7 @@ struct WatchExerciseRun_Previews: PreviewProvider {
         var body: some View {
             WatchExerciseRun(exercise: exercise,
                              middleMode: $middleMode,
-                             nextAction: { _ in },
+                             onNextIncomplete: { _ in },
                              hasNextIncomplete: { true },
                              selectedExercise: $selectedExercise,
                              standardViews: WatchStandardViews(middleMode: $middleMode))

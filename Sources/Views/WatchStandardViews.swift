@@ -22,13 +22,13 @@ struct WatchStandardViews: StandardViews {
     }
 
     func exerciseRun(exercise: Exercise,
-                     nextAction: @escaping (Int16?) -> Void,
+                     onNextIncomplete: @escaping (Int16?) -> Void,
                      hasNextIncomplete: @escaping () -> Bool,
                      selectedExercise: Binding<Exercise?>) -> AnyView
     {
         WatchExerciseRun(exercise: exercise,
                          middleMode: $middleMode,
-                         nextAction: nextAction,
+                         onNextIncomplete: onNextIncomplete,
                          hasNextIncomplete: hasNextIncomplete,
                          selectedExercise: selectedExercise,
                          standardViews: self).eraseToAnyView()
@@ -57,22 +57,22 @@ struct WatchStandardViews: StandardViews {
     }
 
     func routineControl(routine: Routine,
-                        selectedTab: Binding<URL>,
+                        onAdd: @escaping () -> Void,
                         onStop: @escaping () -> Void,
-                        nextAction: @escaping (Int16?) -> Void,
-                        maxOrder: Int16,
+                        onNextIncomplete: @escaping (Int16?) -> Void,
+                        //maxOrder: Int16,
                         remainingCount: @escaping () -> Int,
-                        startedAt: Date,
-                        standardViews: StandardViews) -> AnyView
+                        startedAt: Date) -> AnyView
     {
         WatchRoutineControl(routine: routine,
-                            selectedTab: selectedTab,
+                            //selectedTab: selectedTab,
+                            onAdd: onAdd,
                             onStop: onStop,
-                            nextAction: nextAction,
-                            maxOrder: maxOrder,
+                            onNextIncomplete: onNextIncomplete,
+                            //maxOrder: maxOrder,
                             remainingCount: remainingCount,
                             startedAt: startedAt,
-                            standardViews: standardViews).eraseToAnyView()
+                            standardViews: self).eraseToAnyView()
     }
 
     func settingsForm() -> AnyView {
@@ -80,13 +80,12 @@ struct WatchStandardViews: StandardViews {
     }
 
     func routineRun(routine: Routine,
-                    selectedTab: Binding<URL>,
+                    initialTab: URL,
                     startedAt: Binding<Date>,
-                    standardViews _: StandardViews,
                     onStop: @escaping (Routine) -> Void) -> AnyView
     {
         WatchRoutineRun(routine: routine,
-                        selectedTab: selectedTab,
+                        initialTab: initialTab,
                         startedAt: startedAt,
                         standardViews: self,
                         onStop: onStop).eraseToAnyView()

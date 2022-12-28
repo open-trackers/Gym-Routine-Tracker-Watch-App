@@ -12,20 +12,22 @@ import GroutUI
 
 struct WatchRoutineControl: View {
     var routine: Routine
-    @Binding var selectedTab: URL
+    //@Binding var selectedTab: URL?
+    let onAdd: () -> Void
     let onStop: () -> Void
-    let nextAction: (Int16?) -> Void
-    var maxOrder: Int16
+    let onNextIncomplete: (Int16?) -> Void
+    //var maxOrder: Int16
     var remainingCount: () -> Int
     var startedAt: Date
     var standardViews: StandardViews
 
     var body: some View {
         RoutineControl(routine: routine,
-                       selectedTab: $selectedTab,
+                       //selectedTab: $selectedTab,
+                       onAdd: onAdd,
                        onStop: onStop,
-                       nextAction: nextAction,
-                       maxOrder: maxOrder,
+                       onNextIncomplete: onNextIncomplete,
+                       //maxOrder: maxOrder,
                        remainingCount: remainingCount,
                        startedAt: startedAt,
                        standardViews: standardViews)
@@ -35,14 +37,15 @@ struct WatchRoutineControl: View {
 struct WatchRoutineControl_Previews: PreviewProvider {
     struct TestHolder: View {
         var routine: Routine
-        @State var selectedTab: URL = .init(string: "blah")!
+        @State var selectedTab: URL? = .init(string: "blah")!
         var startedAt = Date.now.addingTimeInterval(-1200)
         var body: some View {
             WatchRoutineControl(routine: routine,
-                                selectedTab: $selectedTab,
+                               // selectedTab: $selectedTab,
+                                onAdd: {},
                                 onStop: {},
-                                nextAction: { _ in },
-                                maxOrder: 0,
+                                onNextIncomplete: { _ in },
+                               // maxOrder: 0,
                                 remainingCount: { 3 },
                                 startedAt: startedAt, standardViews: WatchStandardViews(middleMode: .constant(.intensity)))
         }

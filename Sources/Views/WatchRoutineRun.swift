@@ -14,30 +14,16 @@ struct WatchRoutineRun: View {
     // MARK: - Parameters
 
     var routine: Routine
-    @Binding var selectedTab: URL
+    var initialTab: URL?
     @Binding var startedAt: Date
     var standardViews: WatchStandardViews
     let onStop: (Routine) -> Void
-
-    internal init(routine: Routine,
-                  selectedTab: Binding<URL>,
-                  startedAt: Binding<Date>,
-                  standardViews: WatchStandardViews,
-                  onStop: @escaping (Routine) -> Void)
-    {
-        self.routine = routine
-        self.standardViews = standardViews
-        self.onStop = onStop
-
-        _selectedTab = selectedTab
-        _startedAt = startedAt
-    }
 
     // MARK: - Views
 
     var body: some View {
         RoutineRun(routine: routine,
-                   selectedTab: $selectedTab,
+                   initialTab: initialTab,
                    startedAt: $startedAt,
                    standardViews: standardViews,
                    onStop: onStop)
@@ -47,12 +33,11 @@ struct WatchRoutineRun: View {
 struct WatchRoutineRun_Previews: PreviewProvider {
     struct TestHolder: View {
         var routine: Routine
-        @State var selectedTab: URL = controlTab // controlTab
         @State var startedAt: Date = Date.now.addingTimeInterval(-1000)
         var body: some View {
             NavigationStack {
                 WatchRoutineRun(routine: routine,
-                                selectedTab: $selectedTab,
+                                initialTab: controlTab,
                                 startedAt: $startedAt,
                                 standardViews: WatchStandardViews(middleMode: .constant(.intensity)),
                                 onStop: { _ in })
