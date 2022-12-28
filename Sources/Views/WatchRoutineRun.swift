@@ -14,7 +14,6 @@ struct WatchRoutineRun: View {
     // MARK: - Parameters
 
     var routine: Routine
-    var initialTab: URL?
     @Binding var startedAt: Date
     var standardViews: WatchStandardViews
     let onStop: (Routine) -> Void
@@ -23,7 +22,6 @@ struct WatchRoutineRun: View {
 
     var body: some View {
         RoutineRun(routine: routine,
-                   initialTab: initialTab,
                    startedAt: $startedAt,
                    standardViews: standardViews,
                    onStop: onStop)
@@ -37,7 +35,6 @@ struct WatchRoutineRun_Previews: PreviewProvider {
         var body: some View {
             NavigationStack {
                 WatchRoutineRun(routine: routine,
-                                initialTab: controlTab,
                                 startedAt: $startedAt,
                                 standardViews: WatchStandardViews(middleMode: .constant(.intensity)),
                                 onStop: { _ in })

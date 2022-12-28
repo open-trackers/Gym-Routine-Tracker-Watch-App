@@ -77,12 +77,10 @@ struct WatchStandardViews: StandardViews {
     }
 
     func routineRun(routine: Routine,
-                    initialTab: URL?,
                     startedAt: Binding<Date>,
                     onStop: @escaping (Routine) -> Void) -> AnyView
     {
         WatchRoutineRun(routine: routine,
-                        initialTab: initialTab,
                         startedAt: startedAt,
                         standardViews: self,
                         onStop: onStop).eraseToAnyView()
