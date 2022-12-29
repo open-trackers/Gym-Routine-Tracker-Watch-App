@@ -24,13 +24,13 @@ struct WatchStandardViews: StandardViews {
     func exerciseRun(exercise: Exercise,
                      onNextIncomplete: @escaping (Int16?) -> Void,
                      hasNextIncomplete: @escaping () -> Bool,
-                     selectedExercise: Binding<Exercise?>) -> AnyView
+                     onEdit: @escaping (Exercise) -> Void) -> AnyView
     {
         WatchExerciseRun(exercise: exercise,
                          middleMode: $middleMode,
                          onNextIncomplete: onNextIncomplete,
                          hasNextIncomplete: hasNextIncomplete,
-                         selectedExercise: selectedExercise,
+                         onEdit: onEdit,
                          standardViews: self).eraseToAnyView()
     }
 

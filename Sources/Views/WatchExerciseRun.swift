@@ -17,7 +17,7 @@ struct WatchExerciseRun: View {
     @Binding var middleMode: ExerciseMiddleRowMode
     var onNextIncomplete: (Int16?) -> Void
     var hasNextIncomplete: () -> Bool
-    @Binding var selectedExercise: Exercise?
+    var onEdit: (Exercise) -> Void
     var standardViews: StandardViews
 
     // MARK: - Views
@@ -26,7 +26,7 @@ struct WatchExerciseRun: View {
         ExerciseRun(exercise: exercise,
                     onNextIncomplete: onNextIncomplete,
                     hasNextIncomplete: hasNextIncomplete,
-                    selectedExercise: $selectedExercise,
+                    onEdit: onEdit,
                     standardViews: standardViews) { geo, titleText, navigationRow in
             VStack {
                 titleText
@@ -53,7 +53,7 @@ struct WatchExerciseRun: View {
     private var setsView: some View {
         ExerciseRunMiddleRow(imageName: "dumbbell.fill",
                              imageColor: exerciseSetsColor,
-                             onDetail: { selectedExercise = exercise },
+                             onDetail: { onEdit(exercise) },
                              onTap: { middleMode = .intensity }) {
             TitleText("\(exercise.sets)/\(exercise.repetitions)")
                 .tint(.primary)
@@ -70,7 +70,7 @@ struct WatchExerciseRun: View {
     private var gearView: some View {
         ExerciseRunMiddleRow(imageName: "gearshape.fill",
                              imageColor: exerciseGearColor,
-                             onDetail: { selectedExercise = exercise },
+                             onDetail: { onEdit(exercise) },
                              onTap: { middleMode = .sets }) {
             HStack {
                 if exercise.primarySetting == 0, exercise.secondarySetting == 0 {
@@ -128,14 +128,13 @@ struct WatchExerciseRun: View {
 struct WatchExerciseRun_Previews: PreviewProvider {
     struct TestHolder: View {
         var exercise: Exercise
-        @State var selectedExercise: Exercise?
         @State var middleMode: ExerciseMiddleRowMode = .intensity
         var body: some View {
             WatchExerciseRun(exercise: exercise,
                              middleMode: $middleMode,
                              onNextIncomplete: { _ in },
                              hasNextIncomplete: { true },
-                             selectedExercise: $selectedExercise,
+                             onEdit: { _ in },
                              standardViews: WatchStandardViews(middleMode: $middleMode))
         }
     }
