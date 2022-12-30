@@ -1,8 +1,11 @@
 //
 //  WatchRoutineDetail.swift
-//  Gym Routine Tracker
 //
-//  Created by Reed Esau on 12/21/22.
+// Copyright 2022  OpenAlloc LLC
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //
 
 import SwiftUI
@@ -43,7 +46,6 @@ struct WatchRoutineDetail: View {
 
                 FakeSection("Exercises") {
                     standardViews.exerciseList(routine: routine)
-                    // .environmentObject(router)
                 }
                 .tabItem {
                     Text("Exercises")
@@ -51,22 +53,12 @@ struct WatchRoutineDetail: View {
                 .tag(1)
             }
             .tabViewStyle(.page)
-//            .navigationTitle {
-//                Text("Routine")
-//                    .foregroundColor(routineColor)
-//            }
-//            .onDisappear(perform: onDisappearAction)
+            .navigationTitle {
+                Text("Routine")
+                    .foregroundColor(routineColor)
+            }
         }
     }
-
-    // MARK: - Properties
-
-    // MARK: - Actions
-
-//    private func onDisappearAction() {
-//        logger.debug("Routine Detail, onDisappear")
-//        PersistenceManager.shared.save()
-//    }
 }
 
 struct WatchRoutineDetail_Previews: PreviewProvider {

@@ -10,10 +10,10 @@
 
 import SwiftUI
 
-public enum ExerciseMiddleRowMode {
-    case intensity
-    case gear
-    case sets
+enum ExerciseMiddleRowMode: Int {
+    case intensity = 0
+    case gear = 1
+    case sets = 2
 }
 
 struct ExerciseRunMiddleRow<Content: View>: View {

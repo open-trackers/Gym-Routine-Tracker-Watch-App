@@ -15,9 +15,9 @@ import GroutLib
 import GroutUI
 
 struct ContentView: View {
-    @SceneStorage("main-routines-router") private var routinesNavData: Data?
+    @SceneStorage("routines-router") private var routinesNavData: Data?
 
-    @State private var middleMode: ExerciseMiddleRowMode = .intensity
+    @SceneStorage("middle-mode") private var middleMode: ExerciseMiddleRowMode = .intensity
 
     var body: some View {
         let standardViews = WatchStandardViews(middleMode: $middleMode)
