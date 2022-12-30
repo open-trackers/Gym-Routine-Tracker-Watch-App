@@ -13,11 +13,6 @@ import SwiftUI
 
 import GroutLib
 
-let logger = Logger(
-    subsystem: Bundle.main.bundleIdentifier!,
-    category: String(describing: Gym_Routine_Tracker_Watch_App.self)
-)
-
 @main
 struct Gym_Routine_Tracker_Watch_App: App {
     let persistenceManager = PersistenceManager.shared
