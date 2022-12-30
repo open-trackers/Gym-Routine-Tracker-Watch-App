@@ -39,10 +39,10 @@ struct WatchExerciseRun: View {
                     switch middleMode {
                     case .intensity:
                         intensityView
-                    case .gear:
-                        gearView
-                    case .sets:
-                        setsView
+                    case .settings:
+                        settingsView
+                    case .volume:
+                        volumeView
                     }
                 }
                 .frame(height: geo.size.height * 5 / 13)
@@ -53,13 +53,13 @@ struct WatchExerciseRun: View {
         }
     }
 
-    private var setsView: some View {
+    private var volumeView: some View {
         ExerciseRunMiddleRow(imageName: "dumbbell.fill",
                              imageColor: exerciseSetsColor,
                              onDetail: { onEdit(exercise) },
                              onTap: { middleMode = .intensity }) {
             TitleText("\(exercise.sets)/\(exercise.repetitions)")
-                .tint(.primary)
+                .foregroundStyle(textTintColor)
                 .modify {
                     if #available(iOS 16.1, watchOS 9.1, *) {
                         $0.fontDesign(.monospaced)
@@ -70,11 +70,11 @@ struct WatchExerciseRun: View {
         }
     }
 
-    private var gearView: some View {
+    private var settingsView: some View {
         ExerciseRunMiddleRow(imageName: "gearshape.fill",
                              imageColor: exerciseGearColor,
                              onDetail: { onEdit(exercise) },
-                             onTap: { middleMode = .sets }) {
+                             onTap: { middleMode = .volume }) {
             HStack {
                 if exercise.primarySetting == 0, exercise.secondarySetting == 0 {
                     Text("None")
@@ -83,10 +83,10 @@ struct WatchExerciseRun: View {
                 } else {
                     Group {
                         if exercise.primarySetting > 0 {
-                            NumberImage(exercise.primarySetting, isCircle: true)
+                            NumberImage(exercise.primarySetting, isCircle: true, tintColor: textTintColor)
                         }
                         if exercise.secondarySetting > 0 {
-                            NumberImage(exercise.secondarySetting, isCircle: false)
+                            NumberImage(exercise.secondarySetting, isCircle: false, tintColor: textTintColor)
                         }
                     }
                     // .symbolRenderingMode(.hierarchical)
@@ -108,14 +108,18 @@ struct WatchExerciseRun: View {
         .fontWeight(numberWeight)
         .symbolRenderingMode(.hierarchical)
         .disabled(isDone)
-        .foregroundColor(isDone ? completedColor : .primary)
+        .foregroundColor(textTintColor)
         .contentShape(Rectangle())
         .onTapGesture {
-            middleMode = .gear
+            middleMode = .settings
         }
     }
 
     // MARK: - Helpers
+
+    private var textTintColor: Color {
+        isDone ? completedColor : .primary
+    }
 
     private var isDone: Bool {
         exercise.isDone
