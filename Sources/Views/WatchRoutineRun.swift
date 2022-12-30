@@ -19,7 +19,7 @@ struct WatchRoutineRun: View {
     var routine: Routine
     @Binding var isNew: Bool
     @Binding var startedAt: Date
-    var standardViews: WatchStandardViews
+    var factory: WatchFactory
     let onStop: (Routine) -> Void
 
     // MARK: - Views
@@ -28,7 +28,7 @@ struct WatchRoutineRun: View {
         RoutineRun(routine: routine,
                    isNew: $isNew,
                    startedAt: $startedAt,
-                   standardViews: standardViews,
+                   factory: factory,
                    onStop: onStop)
     }
 }
@@ -42,7 +42,7 @@ struct WatchRoutineRun_Previews: PreviewProvider {
                 WatchRoutineRun(routine: routine,
                                 isNew: .constant(true),
                                 startedAt: $startedAt,
-                                standardViews: WatchStandardViews(middleMode: .constant(.intensity)),
+                                factory: WatchFactory(middleMode: .constant(.intensity)),
                                 onStop: { _ in })
             }
         }

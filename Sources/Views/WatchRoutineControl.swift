@@ -20,7 +20,7 @@ struct WatchRoutineControl: View {
     let onNextIncomplete: (Int16?) -> Void
     var onRemainingCount: () -> Int
     var startedAt: Date
-    var standardViews: StandardViews
+    var factory: Factory
 
     var body: some View {
         RoutineControl(routine: routine,
@@ -29,7 +29,7 @@ struct WatchRoutineControl: View {
                        onNextIncomplete: onNextIncomplete,
                        onRemainingCount: onRemainingCount,
                        startedAt: startedAt,
-                       standardViews: standardViews)
+                       factory: factory)
     }
 }
 
@@ -44,7 +44,7 @@ struct WatchRoutineControl_Previews: PreviewProvider {
                                 onStop: {},
                                 onNextIncomplete: { _ in },
                                 onRemainingCount: { 3 },
-                                startedAt: startedAt, standardViews: WatchStandardViews(middleMode: .constant(.intensity)))
+                                startedAt: startedAt, factory: WatchFactory(middleMode: .constant(.intensity)))
         }
     }
 

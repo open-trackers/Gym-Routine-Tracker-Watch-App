@@ -13,11 +13,11 @@ import SwiftUI
 import GroutLib
 import GroutUI
 
-struct WatchStandardViews: StandardViews {
+struct WatchFactory: Factory {
     @Binding var middleMode: ExerciseMiddleRowMode
 
     func routineDetail(routine: Routine) -> AnyView {
-        WatchRoutineDetail(routine: routine, standardViews: self).eraseToAnyView()
+        WatchRoutineDetail(routine: routine, factory: self).eraseToAnyView()
     }
 
     func exerciseDetail(exercise: Exercise) -> AnyView {
@@ -34,15 +34,15 @@ struct WatchStandardViews: StandardViews {
                          onNextIncomplete: onNextIncomplete,
                          hasNextIncomplete: hasNextIncomplete,
                          onEdit: onEdit,
-                         standardViews: self).eraseToAnyView()
+                         factory: self).eraseToAnyView()
     }
 
     func routineList() -> AnyView {
-        WatchRoutineList(standardViews: self).eraseToAnyView()
+        WatchRoutineList(factory: self).eraseToAnyView()
     }
 
     func exerciseList(routine: Routine) -> AnyView {
-        WatchExerciseList(standardViews: self,
+        WatchExerciseList(factory: self,
                           routine: routine).eraseToAnyView()
     }
 
@@ -72,7 +72,7 @@ struct WatchStandardViews: StandardViews {
                             onNextIncomplete: onNextIncomplete,
                             onRemainingCount: onRemainingCount,
                             startedAt: startedAt,
-                            standardViews: self).eraseToAnyView()
+                            factory: self).eraseToAnyView()
     }
 
     func settingsForm() -> AnyView {
@@ -87,7 +87,7 @@ struct WatchStandardViews: StandardViews {
         WatchRoutineRun(routine: routine,
                         isNew: isNew,
                         startedAt: startedAt,
-                        standardViews: self,
+                        factory: self,
                         onStop: onStop).eraseToAnyView()
     }
 }

@@ -21,7 +21,7 @@ struct WatchExerciseRun: View {
     var onNextIncomplete: (Int16?) -> Void
     var hasNextIncomplete: () -> Bool
     var onEdit: (Exercise) -> Void
-    var standardViews: StandardViews
+    var factory: Factory
 
     // MARK: - Views
 
@@ -30,7 +30,7 @@ struct WatchExerciseRun: View {
                     onNextIncomplete: onNextIncomplete,
                     hasNextIncomplete: hasNextIncomplete,
                     onEdit: onEdit,
-                    standardViews: standardViews) { geo, titleText, navigationRow in
+                    factory: factory) { geo, titleText, navigationRow in
             VStack {
                 titleText
                     .frame(height: geo.size.height * 3 / 13)
@@ -138,7 +138,7 @@ struct WatchExerciseRun_Previews: PreviewProvider {
                              onNextIncomplete: { _ in },
                              hasNextIncomplete: { true },
                              onEdit: { _ in },
-                             standardViews: WatchStandardViews(middleMode: $middleMode))
+                             factory: WatchFactory(middleMode: $middleMode))
         }
     }
 

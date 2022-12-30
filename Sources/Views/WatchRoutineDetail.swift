@@ -19,7 +19,7 @@ struct WatchRoutineDetail: View {
     @SceneStorage("RoutineDetailTab") private var selectedTab: Int = 0
 
     @ObservedObject var routine: Routine
-    var standardViews: StandardViews
+    var factory: Factory
 
     var body: some View {
         RoutineDetail(routine: routine) {
@@ -45,7 +45,7 @@ struct WatchRoutineDetail: View {
                 .tag(0)
 
                 FakeSection("Exercises") {
-                    standardViews.exerciseList(routine: routine)
+                    factory.exerciseList(routine: routine)
                 }
                 .tabItem {
                     Text("Exercises")
@@ -65,10 +65,10 @@ struct WatchRoutineDetail_Previews: PreviewProvider {
     struct TestHolder: View {
         var routine: Routine
         @State var navData: Data?
-        var standardViews = WatchStandardViews(middleMode: .constant(.intensity))
+        var factory = WatchFactory(middleMode: .constant(.intensity))
         var body: some View {
             NavigationStack {
-                WatchRoutineDetail(routine: routine, standardViews: standardViews).eraseToAnyView()
+                WatchRoutineDetail(routine: routine, factory: factory).eraseToAnyView()
             }
         }
     }

@@ -20,9 +20,9 @@ struct ContentView: View {
     @SceneStorage("middle-mode") private var middleMode: ExerciseMiddleRowMode = .intensity
 
     var body: some View {
-        let standardViews = WatchStandardViews(middleMode: $middleMode)
-        NavStack(name: "main", standardViews: standardViews, navData: $routinesNavData) {
-            standardViews.routineList()
+        let factory = WatchFactory(middleMode: $middleMode)
+        NavStack(name: "main", factory: factory, navData: $routinesNavData) {
+            factory.routineList()
         }
     }
 }

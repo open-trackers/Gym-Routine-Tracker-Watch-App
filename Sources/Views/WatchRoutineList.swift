@@ -17,10 +17,10 @@ struct WatchRoutineList: View {
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject private var router: MyRouter
 
-    var standardViews: StandardViews
+    var factory: Factory
 
     var body: some View {
-        RoutineList(standardViews: standardViews) {
+        RoutineList(factory: factory) {
             Group {
                 addButton
                 settingsButton
@@ -66,10 +66,10 @@ struct WatchRoutineList: View {
 
 struct WatchRoutineList_Previews: PreviewProvider {
     struct TestHolder: View {
-        let standardViews = WatchStandardViews(middleMode: .constant(.intensity))
+        let factory = WatchFactory(middleMode: .constant(.intensity))
         var body: some View {
             NavigationStack {
-                WatchRoutineList(standardViews: standardViews)
+                WatchRoutineList(factory: factory)
             }
         }
     }

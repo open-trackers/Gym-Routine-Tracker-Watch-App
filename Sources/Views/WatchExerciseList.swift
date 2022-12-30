@@ -16,11 +16,11 @@ import GroutUI
 struct WatchExerciseList: View {
     @EnvironmentObject private var router: MyRouter
 
-    var standardViews: StandardViews
+    var factory: Factory
     @ObservedObject var routine: Routine
 
     var body: some View {
-        ExerciseList(routine: routine, standardViews: standardViews) {
+        ExerciseList(routine: routine, factory: factory) {
             addButton
                 .font(.title3)
                 .tint(exerciseColor)
@@ -39,10 +39,10 @@ struct WatchExerciseList: View {
 struct WatchExerciseList_Previews: PreviewProvider {
     struct TestHolder: View {
         var routine: Routine
-        let standardViews = WatchStandardViews(middleMode: .constant(.intensity))
+        let factory = WatchFactory(middleMode: .constant(.intensity))
         var body: some View {
             NavigationStack {
-                WatchExerciseList(standardViews: standardViews, routine: routine)
+                WatchExerciseList(factory: factory, routine: routine)
             }
         }
     }
