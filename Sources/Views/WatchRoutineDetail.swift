@@ -16,7 +16,7 @@ import GroutUI
 struct WatchRoutineDetail: View {
     @EnvironmentObject private var router: MyRouter
 
-    @SceneStorage("RoutineDetailTab") private var selectedTab: Int = 0
+    @SceneStorage("routine-detail-tab") private var selectedTab: Int = 0
 
     @ObservedObject var routine: Routine
     var factory: Factory

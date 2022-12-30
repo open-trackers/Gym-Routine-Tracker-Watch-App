@@ -18,7 +18,7 @@ struct WatchExerciseDetail: View {
 
     // MARK: - Locals
 
-    @SceneStorage("ExerciseDetailTab") private var tabSelected = 1
+    @SceneStorage("exercise-detail-tab") private var tabSelected = 1
 
     var body: some View {
         ExerciseDetail(exercise: exercise) {
