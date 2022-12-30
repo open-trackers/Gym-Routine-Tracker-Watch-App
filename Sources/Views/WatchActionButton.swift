@@ -29,12 +29,12 @@ struct WatchActionButton: View {
                      imageSystemName: imageSystemName,
                      buttonText: buttonText,
                      tint: tint,
-                     xbody: xbody,
+                     buttonBody: buttonBody,
                      label: label,
                      onLongPress: onLongPress)
     }
 
-    private func xbody(_ button: AnyView) -> some View {
+    private func buttonBody(_ button: AnyView) -> some View {
         button
             .foregroundStyle(.tint)
             .tint(tint)

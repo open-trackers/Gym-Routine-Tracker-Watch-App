@@ -44,7 +44,7 @@ struct WatchRoutineDetail: View {
                 }
                 .tag(0)
 
-                FakeSection("Exercises") {
+                FakeSection(title: "Exercises") {
                     factory.exerciseList(routine: routine)
                 }
                 .tabItem {

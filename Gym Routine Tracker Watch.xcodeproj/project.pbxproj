@@ -10,6 +10,7 @@
 		4058FD582954F06500448F8A /* WatchExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4058FD572954EA8900448F8A /* WatchExerciseDetail.swift */; };
 		4058FD5C2954F3D700448F8A /* WatchFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4058FD5B2954F3D700448F8A /* WatchFactory.swift */; };
 		40666E5F295A035B008DFF02 /* WatchRoutineRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40666E5E295A035B008DFF02 /* WatchRoutineRun.swift */; };
+		40666E61295EAD87008DFF02 /* FakeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40666E60295EAD87008DFF02 /* FakeSection.swift */; };
 		409CFEA029561C3B007DE6EF /* WatchRoutineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CFE9F29561C3B007DE6EF /* WatchRoutineControl.swift */; };
 		409CFEA429561F3F007DE6EF /* WatchExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CFEA329561F3F007DE6EF /* WatchExerciseList.swift */; };
 		409CFEA82956211F007DE6EF /* WatchSettingsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CFEA72956211F007DE6EF /* WatchSettingsForm.swift */; };
@@ -59,6 +60,7 @@
 		4058FD572954EA8900448F8A /* WatchExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExerciseDetail.swift; sourceTree = "<group>"; };
 		4058FD5B2954F3D700448F8A /* WatchFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFactory.swift; sourceTree = "<group>"; };
 		40666E5E295A035B008DFF02 /* WatchRoutineRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRoutineRun.swift; sourceTree = "<group>"; };
+		40666E60295EAD87008DFF02 /* FakeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSection.swift; sourceTree = "<group>"; };
 		409CFE9F29561C3B007DE6EF /* WatchRoutineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRoutineControl.swift; sourceTree = "<group>"; };
 		409CFEA329561F3F007DE6EF /* WatchExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExerciseList.swift; sourceTree = "<group>"; };
 		409CFEA72956211F007DE6EF /* WatchSettingsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSettingsForm.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				409CFEA72956211F007DE6EF /* WatchSettingsForm.swift */,
 				4058FD5B2954F3D700448F8A /* WatchFactory.swift */,
 				40666E5E295A035B008DFF02 /* WatchRoutineRun.swift */,
+				40666E60295EAD87008DFF02 /* FakeSection.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				40A0D0E929540BD900624539 /* WatchExerciseRun.swift in Sources */,
 				40A0D0EF29541AD700624539 /* WatchRoutineDetail.swift in Sources */,
 				40E9D568295564F000317110 /* WatchRoutineList.swift in Sources */,
+				40666E61295EAD87008DFF02 /* FakeSection.swift in Sources */,
 				40666E5F295A035B008DFF02 /* WatchRoutineRun.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
