@@ -57,7 +57,7 @@ Apps by the same author:
 
 ## License
 
-Copyright 2022 OpenAlloc LLC
+Copyright 2022, 2023 OpenAlloc LLC
 
 All application code is licensed under the [Mozilla Public License 2](https://www.mozilla.org/en-US/MPL/2.0/), except where noted in individual modules.
 
