@@ -126,12 +126,6 @@ struct WatchExerciseRun: View {
     }
 }
 
-// struct WatchRunView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        WatchRunView()
-//    }
-// }
-
 struct WatchExerciseRun_Previews: PreviewProvider {
     struct TestHolder: View {
         var exercise: Exercise
