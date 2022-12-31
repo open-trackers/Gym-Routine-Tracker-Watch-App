@@ -83,10 +83,10 @@ struct WatchExerciseRun: View {
                 } else {
                     Group {
                         if exercise.primarySetting > 0 {
-                            NumberImage(exercise.primarySetting, isCircle: true, tintColor: textTintColor)
+                            NumberImage(exercise.primarySetting, isCircle: true, disabled: isDone)
                         }
                         if exercise.secondarySetting > 0 {
-                            NumberImage(exercise.secondarySetting, isCircle: false, tintColor: textTintColor)
+                            NumberImage(exercise.secondarySetting, isCircle: false, disabled: isDone)
                         }
                     }
                     // .symbolRenderingMode(.hierarchical)
