@@ -60,13 +60,7 @@ struct WatchExerciseRun: View {
                              onTap: { middleMode = .intensity }) {
             TitleText("\(exercise.sets)/\(exercise.repetitions)")
                 .foregroundStyle(textTintColor)
-                .modify {
-                    if #available(iOS 16.1, watchOS 9.1, *) {
-                        $0.fontDesign(.monospaced)
-                    } else {
-                        $0.monospaced()
-                    }
-                }
+                .fontDesign(.monospaced)
         }
     }
 
@@ -101,11 +95,10 @@ struct WatchExerciseRun: View {
         Stepper(value: $exercise.lastIntensity,
                 in: 0.0 ... intensityMaxValue,
                 step: exercise.intensityStep) {
-            Text(exercise.formatIntensity(exercise.lastIntensity))
-                .minimumScaleFactor(0.5)
-                .lineLimit(1)
+            TitleText(
+                exercise.formatIntensity(exercise.lastIntensity, withUnits: true)
+            )
         }
-        .fontWeight(numberWeight)
         .symbolRenderingMode(.hierarchical)
         .disabled(isDone)
         .foregroundColor(textTintColor)
@@ -151,7 +144,7 @@ struct WatchExerciseRun_Previews: PreviewProvider {
         e1.secondarySetting = 6
         e1.units = Units.kilograms.rawValue
         e1.intensityStep = 7.1
-        e1.units = Units.pounds.rawValue
+        // e1.units = Units.pounds.rawValue
         return NavigationStack {
             TestHolder(exercise: e1)
         }

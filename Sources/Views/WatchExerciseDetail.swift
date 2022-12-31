@@ -68,6 +68,7 @@ struct WatchExerciseDetail_Previews: PreviewProvider {
         let exercise = Exercise.create(ctx, userOrder: 0)
         exercise.name = "Lat Pulldown"
         exercise.routine = routine
+        exercise.units = Units.kilograms.rawValue
         return TestHolder(exercise: exercise)
             .environment(\.managedObjectContext, ctx)
     }
