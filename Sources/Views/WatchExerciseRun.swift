@@ -154,9 +154,10 @@ struct WatchExerciseRun_Previews: PreviewProvider {
         e1.name = "Lat Pulldown"
         e1.routine = routine
         e1.primarySetting = 4
-        //        e1.secondarySetting = 6
-        // e1.units = Units.kilograms.rawValue
+        e1.secondarySetting = 6
+        e1.units = Units.kilograms.rawValue
         e1.intensityStep = 7.1
+        e1.units = Units.pounds.rawValue
         return NavigationStack {
             TestHolder(exercise: e1)
         }
