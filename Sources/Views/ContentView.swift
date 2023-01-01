@@ -17,12 +17,9 @@ import GroutUI
 struct ContentView: View {
     @SceneStorage("main-routines-nav") private var routinesNavData: Data?
 
-    @SceneStorage("middle-mode") private var middleMode: ExerciseMiddleRowMode = .intensity
-
     var body: some View {
-        let factory = WatchFactory(middleMode: $middleMode)
-        NavStack(name: "main", factory: factory, navData: $routinesNavData) {
-            factory.routineList()
+        NavStack(name: "main", navData: $routinesNavData) {
+            RoutineList()
         }
     }
 }
