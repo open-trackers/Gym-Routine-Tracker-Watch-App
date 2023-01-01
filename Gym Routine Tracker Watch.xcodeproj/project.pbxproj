@@ -72,14 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		409CFEAB2956A205007DE6EF /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				40CE1490293B153700462D62 /* ContentView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		40CE13F6293B0DBB00462D62 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				40CE1408293B0DBB00462D62 /* WatchApp.swift */,
-				409CFEAB2956A205007DE6EF /* Views */,
+				40CE1490293B153700462D62 /* ContentView.swift */,
 				40CE140C293B0DBC00462D62 /* Assets.xcassets */,
 				40CE145A293B109400462D62 /* Info.plist */,
 				40CE1459293B105800462D62 /* App.entitlements */,
