@@ -1,7 +1,7 @@
 //
 //  ContentView.swift
 //
-// Copyright 2022  OpenAlloc LLC
+// Copyright 2022, 2023  OpenAlloc LLC
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -12,15 +12,15 @@ import CoreData
 import SwiftUI
 
 import GroutLib
+import GroutUI
 
 struct ContentView: View {
-    @State var router: NavigationPath = .init()
+    @SceneStorage("main-routines-nav") private var routinesNavData: Data?
 
     var body: some View {
-        NavigationStack(path: $router) {
-            RoutineList(router: $router)
+        NavStack(name: "main", navData: $routinesNavData) {
+            RoutineList()
         }
-        .interactiveDismissDisabled() // NOTE: needed to prevent home button from dismissing sheet
     }
 }
 

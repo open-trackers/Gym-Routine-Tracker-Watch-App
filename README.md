@@ -46,8 +46,9 @@ To any Apple product managers who like this app, please consider Sherlocking it!
 
 ## See Also
 
-* [GRT Website](https://gym-routine-tracker.github.io) - Website for GRT
+* [GRT Website](https://gym-routine-tracker.github.io) - Website for GRT (both watchOS and iOS implementations)
 * [GRT on the App Store](https://apps.apple.com/us/app/gym-routine-tracker/id6444747204) - App Store link for free download of GRT
+* [GroutUI](https://github.com/gym-routine-tracker/GroutUI) - shared UI layer for GRT (watchOS and iOS)
 * [GroutLib](https://github.com/gym-routine-tracker/GroutLib) - shared business logic and data layer for GRT
 
 Apps by the same author:
@@ -57,7 +58,7 @@ Apps by the same author:
 
 ## License
 
-Copyright 2022 OpenAlloc LLC
+Copyright 2022, 2023 OpenAlloc LLC
 
 All application code is licensed under the [Mozilla Public License 2](https://www.mozilla.org/en-US/MPL/2.0/), except where noted in individual modules.
 

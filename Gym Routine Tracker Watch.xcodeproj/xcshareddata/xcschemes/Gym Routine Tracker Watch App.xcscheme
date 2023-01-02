@@ -17,7 +17,7 @@
                BlueprintIdentifier = "40CE1402293B0DBB00462D62"
                BuildableName = "Gym Routine Tracker Watch App.app"
                BlueprintName = "Gym Routine Tracker Watch App"
-               ReferencedContainer = "container:Gym Routine Tracker.xcodeproj">
+               ReferencedContainer = "container:Gym Routine Tracker Watch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "40CE13FC293B0DBB00462D62"
-               BuildableName = "Gym Routine Tracker.app"
-               BlueprintName = "Gym Routine Tracker"
-               ReferencedContainer = "container:Gym Routine Tracker.xcodeproj">
+               BuildableName = "Gym Routine Tracker Watch.app"
+               BlueprintName = "Gym Routine Tracker Watch"
+               ReferencedContainer = "container:Gym Routine Tracker Watch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,12 +61,16 @@
             BlueprintIdentifier = "40CE1402293B0DBB00462D62"
             BuildableName = "Gym Routine Tracker Watch App.app"
             BlueprintName = "Gym Routine Tracker Watch App"
-            ReferencedContainer = "container:Gym Routine Tracker.xcodeproj">
+            ReferencedContainer = "container:Gym Routine Tracker Watch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-com.apple.CoreData.Logging.stderr 0"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-com.apple.CoreData.ConcurrencyDebug 0"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -88,7 +92,7 @@
             BlueprintIdentifier = "40CE1402293B0DBB00462D62"
             BuildableName = "Gym Routine Tracker Watch App.app"
             BlueprintName = "Gym Routine Tracker Watch App"
-            ReferencedContainer = "container:Gym Routine Tracker.xcodeproj">
+            ReferencedContainer = "container:Gym Routine Tracker Watch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
