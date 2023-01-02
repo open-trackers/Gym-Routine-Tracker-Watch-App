@@ -18,6 +18,7 @@
 		40CE145D293B113600462D62 /* Compactor in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE145C293B113600462D62 /* Compactor */; };
 		40CE14B0293B153700462D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1490293B153700462D62 /* ContentView.swift */; };
 		40CE14C6293B153700462D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE14AB293B153700462D62 /* Preview Assets.xcassets */; };
+		40EBE1C929634FEA004B9189 /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40EBE1C829634FEA004B9189 /* GroutUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 				40BD218F293FDD0500B17BEA /* GroutLib in Frameworks */,
 				40A1A8C9294550620042966C /* GroutUI in Frameworks */,
 				40CE145D293B113600462D62 /* Compactor in Frameworks */,
+				40EBE1C929634FEA004B9189 /* GroutUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +161,7 @@
 				40CE145C293B113600462D62 /* Compactor */,
 				40BD218E293FDD0500B17BEA /* GroutLib */,
 				40A1A8C8294550620042966C /* GroutUI */,
+				40EBE1C829634FEA004B9189 /* GroutUI */,
 			);
 			productName = "Gym Routine Tracker Watch App";
 			productReference = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */;
@@ -194,6 +197,7 @@
 			packageReferences = (
 				40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */,
 				40BD218D293FDD0500B17BEA /* XCRemoteSwiftPackageReference "GroutLib" */,
+				40EBE1C729634FEA004B9189 /* XCRemoteSwiftPackageReference "GroutUI" */,
 			);
 			productRefGroup = 40CE13FE293B0DBB00462D62 /* Products */;
 			projectDirPath = "";
@@ -500,7 +504,7 @@
 			repositoryURL = "https://github.com/gym-routine-tracker/GroutLib.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.0;
 			};
 		};
 		40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */ = {
@@ -509,6 +513,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
+			};
+		};
+		40EBE1C729634FEA004B9189 /* XCRemoteSwiftPackageReference "GroutUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gym-routine-tracker/GroutUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -531,6 +543,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */;
 			productName = Compactor;
+		};
+		40EBE1C829634FEA004B9189 /* GroutUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40EBE1C729634FEA004B9189 /* XCRemoteSwiftPackageReference "GroutUI" */;
+			productName = GroutUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
