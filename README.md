@@ -11,6 +11,7 @@ Available as a free download in the App Store [HERE](https://apps.apple.com/us/a
 - Independent WatchOS app, not requiring companion iOS app. Leave your iPhone at home!
 - LARGE text in RUN mode, for those with presbyopia. Leave your cheaters in your locker!
 - Prioritizes convenience, quick interactions, and the basic needs of the recreational fitness user.
+- Available separately, an independent GRT iOS/iPadOS app
 
 ### Quick and easy setup
 
