@@ -24,7 +24,6 @@ struct ContentView: View {
     }
 }
 
-// TODO: four copies of each routine showing up; should be one!
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let ctx = PersistenceManager.getPreviewContainer().viewContext
