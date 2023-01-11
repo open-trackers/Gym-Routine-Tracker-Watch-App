@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "40CE1402293B0DBB00462D62"
-               BuildableName = "Gym Routine Tracker Watch App.app"
-               BlueprintName = "Gym Routine Tracker Watch App"
+               BuildableName = "Gym Routine Tracker.app"
+               BlueprintName = "Gym Routine Tracker"
                ReferencedContainer = "container:Gym Routine Tracker Watch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -59,8 +59,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40CE1402293B0DBB00462D62"
-            BuildableName = "Gym Routine Tracker Watch App.app"
-            BlueprintName = "Gym Routine Tracker Watch App"
+            BuildableName = "Gym Routine Tracker.app"
+            BlueprintName = "Gym Routine Tracker"
             ReferencedContainer = "container:Gym Routine Tracker Watch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -90,8 +90,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40CE1402293B0DBB00462D62"
-            BuildableName = "Gym Routine Tracker Watch App.app"
-            BlueprintName = "Gym Routine Tracker Watch App"
+            BuildableName = "Gym Routine Tracker.app"
+            BlueprintName = "Gym Routine Tracker"
             ReferencedContainer = "container:Gym Routine Tracker Watch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

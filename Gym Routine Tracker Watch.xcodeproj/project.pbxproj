@@ -11,7 +11,7 @@
 		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
 		40BD218F293FDD0500B17BEA /* GroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40BD218E293FDD0500B17BEA /* GroutLib */; };
-		40CE1404293B0DBB00462D62 /* Gym Routine Tracker Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40CE1404293B0DBB00462D62 /* Gym Routine Tracker.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40CE1409293B0DBB00462D62 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1408293B0DBB00462D62 /* WatchApp.swift */; };
 		40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE140C293B0DBC00462D62 /* Assets.xcassets */; };
 		40CE1458293B100800462D62 /* GroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE1457293B100800462D62 /* GroutLib */; };
@@ -38,7 +38,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				40CE1404293B0DBB00462D62 /* Gym Routine Tracker Watch App.app in Embed Watch Content */,
+				40CE1404293B0DBB00462D62 /* Gym Routine Tracker.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +49,7 @@
 		40A70CA9293BA22D008688F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40A70CAA293BA22D008688F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CE1403293B0DBB00462D62 /* Gym Routine Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CE1408293B0DBB00462D62 /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
 		40CE140C293B0DBC00462D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40CE1459293B105800462D62 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */,
-				40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */,
+				40CE1403293B0DBB00462D62 /* Gym Routine Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,9 +143,9 @@
 			productReference = 40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		40CE1402293B0DBB00462D62 /* Gym Routine Tracker Watch App */ = {
+		40CE1402293B0DBB00462D62 /* Gym Routine Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40CE1413293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker Watch App" */;
+			buildConfigurationList = 40CE1413293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker" */;
 			buildPhases = (
 				40CE13FF293B0DBB00462D62 /* Sources */,
 				40CE1400293B0DBB00462D62 /* Frameworks */,
@@ -155,7 +155,7 @@
 			);
 			dependencies = (
 			);
-			name = "Gym Routine Tracker Watch App";
+			name = "Gym Routine Tracker";
 			packageProductDependencies = (
 				40CE1457293B100800462D62 /* GroutLib */,
 				40CE145C293B113600462D62 /* Compactor */,
@@ -164,7 +164,7 @@
 				40EBE1C829634FEA004B9189 /* GroutUI */,
 			);
 			productName = "Gym Routine Tracker Watch App";
-			productReference = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker Watch App.app */;
+			productReference = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 			projectRoot = "";
 			targets = (
 				40CE13FC293B0DBB00462D62 /* Gym Routine Tracker Watch */,
-				40CE1402293B0DBB00462D62 /* Gym Routine Tracker Watch App */,
+				40CE1402293B0DBB00462D62 /* Gym Routine Tracker */,
 			);
 		};
 /* End PBXProject section */
@@ -245,7 +245,7 @@
 /* Begin PBXTargetDependency section */
 		40CE1406293B0DBB00462D62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 40CE1402293B0DBB00462D62 /* Gym Routine Tracker Watch App */;
+			target = 40CE1402293B0DBB00462D62 /* Gym Routine Tracker */;
 			targetProxy = 40CE1405293B0DBB00462D62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -372,7 +372,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Sources/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = J735QC5U38;
 				ENABLE_PREVIEWS = YES;
@@ -385,7 +385,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -405,7 +405,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Sources/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = J735QC5U38;
 				ENABLE_PREVIEWS = YES;
@@ -418,7 +418,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -440,7 +440,7 @@
 				DEVELOPMENT_TEAM = J735QC5U38;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Gym Routine Tracker";
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -457,7 +457,7 @@
 				DEVELOPMENT_TEAM = J735QC5U38;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Gym Routine Tracker";
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -478,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40CE1413293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker Watch App" */ = {
+		40CE1413293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Gym Routine Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40CE1414293B0DBC00462D62 /* Debug */,

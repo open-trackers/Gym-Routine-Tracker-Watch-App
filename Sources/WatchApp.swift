@@ -19,6 +19,11 @@ struct Gym_Routine_Tracker_Watch_App: App {
 
     @Environment(\.scenePhase) var scenePhase
 
+    private let logger = Logger(
+        subsystem: Bundle.main.bundleIdentifier!,
+        category: "App"
+    )
+
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -27,7 +32,11 @@ struct Gym_Routine_Tracker_Watch_App: App {
         }
         .onChange(of: scenePhase) { _ in
             // save if: (1) app moved to background, and (2) changes are pending
-            persistenceManager.save()
+            do {
+                try persistenceManager.container.viewContext.save()
+            } catch {
+                logger.error("\(#function): \(error.localizedDescription)")
+            }
         }
     }
 }
