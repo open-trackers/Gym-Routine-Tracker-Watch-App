@@ -8,8 +8,6 @@ Available as a FREE download in the App Store [GRT for Apple Watch](https://apps
 
 ## Features
 
-- _NEW in 1.5_ Logs routine/exercise completions, where history can be reviewed on your iPhone/iPad.
-
 - Independent watchOS app, not requiring companion iOS app. Leave your iPhone at home!
 - LARGE text in RUN mode, for the farsighted. Leave your glasses in your locker!
 - Simple data model of user-defined routines and their exercises.
@@ -32,7 +30,7 @@ GRT prioritizes convenience, quick interactions, and the basic needs of the recr
 - Convenient skip to the next incomplete exercise, in case a machine isn’t immediately available.
 - Control screen showing the time elapsed since starting the routine.
 
-### History features (NEW)
+### History features
 
 - Completion of routine/exercise is automatically logged to your private iCloud account.
 - Logging can be disabled in settings.
