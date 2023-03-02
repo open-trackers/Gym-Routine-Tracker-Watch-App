@@ -44,12 +44,10 @@ struct ContentView_Previews: PreviewProvider {
         let ctx = manager.container.viewContext
         let routine = Routine.create(ctx, userOrder: 0)
         routine.name = "Back & Bicep"
-        let e1 = Exercise.create(ctx, userOrder: 0)
+        let e1 = Exercise.create(ctx, routine: routine, userOrder: 0)
         e1.name = "Lat Pulldown"
-        e1.routine = routine
-        let e2 = Exercise.create(ctx, userOrder: 1)
+        let e2 = Exercise.create(ctx, routine: routine, userOrder: 1)
         e2.name = "Arm Curl"
-        e2.routine = routine
         return ContentView()
             .environment(\.managedObjectContext, ctx)
     }
