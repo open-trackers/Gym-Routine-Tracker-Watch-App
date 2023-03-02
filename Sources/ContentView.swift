@@ -15,11 +15,25 @@ import GroutLib
 import GroutUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject private var manager: CoreDataStack
+
     @SceneStorage("main-routines-nav") private var routinesNavData: Data?
 
     var body: some View {
-        NavStack(name: "main", navData: $routinesNavData) {
+        NavStack(navData: $routinesNavData, destination: destination) {
             RoutineList()
+        }
+    }
+
+    // handle routes for watchOS-specific views here
+    @ViewBuilder
+    private func destination(_ router: GroutRouter, _ route: GroutRoute) -> some View {
+        switch route {
+        default:
+            GroutDestination(route)
+                .environmentObject(router)
+                .environment(\.managedObjectContext, viewContext)
         }
     }
 }
