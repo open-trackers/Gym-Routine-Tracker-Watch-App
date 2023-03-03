@@ -1,0 +1,7 @@
+--wraparguments after-first
+
+# was changing
+#  let routine: Routine = Routine.get(viewContext, forURIRepresentation: routineURI)
+# to 
+#  let routine = Routine.get(viewContext, forURIRepresentation: routineURI)
+--disable redundantType

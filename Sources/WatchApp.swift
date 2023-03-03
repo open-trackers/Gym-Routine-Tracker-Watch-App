@@ -22,10 +22,8 @@ struct Gym_Routine_Tracker_Watch_App: App {
 
     private let coreDataStack = CoreDataStack(isCloud: true)
 
-    private let logger = Logger(
-        subsystem: Bundle.main.bundleIdentifier!,
-        category: "App"
-    )
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier!,
+                                category: "App")
 
     // MARK: - Scene
 
