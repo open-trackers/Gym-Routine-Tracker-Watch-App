@@ -24,6 +24,9 @@ struct ContentView: View {
         NavStack(navData: $routinesNavData, destination: destination) {
             RoutineList()
         }
+        .onContinueUserActivity(startRoutineActivityType) {
+            handleStartRoutineUA(viewContext, $0)
+        }
     }
 
     // handle routes for watchOS-specific views here
