@@ -46,14 +46,6 @@ GRT prioritizes convenience, quick interactions, and the basic needs of the recr
 
 Requires watchOS 9.1 or later
 
-## Caveats
-
-- GRT remembers only your most recent workout for each routine. It does not (yet) maintain a historical record of progress.
-- Future enhancements may largely rely on contributors.
-- GRT prioritizes convenience, quick interactions, and the basic needs of the recreational user. More sophisticated trackers are available on the App Store.
-
-To any Apple product managers who like this app, please consider Sherlocking it!
-
 ## See Also
 
 ### App Download Links
