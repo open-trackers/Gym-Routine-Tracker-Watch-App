@@ -24,6 +24,7 @@ struct ContentView: View {
         NavStack(navData: $routinesNavData, destination: destination) {
             RoutineList()
         }
+        .task(priority: .utility, taskAction)
         .onContinueUserActivity(startRoutineActivityType) {
             handleStartRoutineUA(viewContext, $0)
         }
@@ -38,6 +39,11 @@ struct ContentView: View {
                 .environmentObject(router)
                 .environment(\.managedObjectContext, viewContext)
         }
+    }
+
+    @Sendable
+    private func taskAction() async {
+        await handleTaskAction(manager)
     }
 }
 
