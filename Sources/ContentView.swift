@@ -21,7 +21,7 @@ struct ContentView: View {
     @SceneStorage("main-routines-nav") private var routinesNavData: Data?
 
     var body: some View {
-        NavStack(navData: $routinesNavData, destination: destination) {
+        GroutNavStack(navData: $routinesNavData, destination: destination) {
             RoutineList()
         }
         .task(priority: .utility, taskAction)
