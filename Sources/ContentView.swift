@@ -59,5 +59,6 @@ struct ContentView_Previews: PreviewProvider {
         e2.name = "Arm Curl"
         return ContentView()
             .environment(\.managedObjectContext, ctx)
+            .environmentObject(manager)
     }
 }
