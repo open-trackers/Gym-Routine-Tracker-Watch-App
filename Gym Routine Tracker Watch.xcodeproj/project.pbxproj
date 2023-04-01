@@ -27,7 +27,7 @@
 			containerPortal = 40CE13F7293B0DBB00462D62 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 40CE1402293B0DBB00462D62;
-			remoteInfo = "Gym Routine Tracker Watch App";
+			remoteInfo = "Gym Routine Tracker Watch";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -163,7 +163,7 @@
 				40A1A8C8294550620042966C /* GroutUI */,
 				40EBE1C829634FEA004B9189 /* GroutUI */,
 			);
-			productName = "Gym Routine Tracker Watch App";
+			productName = "Gym Routine Tracker Watch";
 			productReference = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
