@@ -15,7 +15,7 @@ import GroutLib
 import TrackerLib
 
 @main
-struct Gym_Routine_Tracker_Watch_App: App {
+struct Watch_App: App {
     @Environment(\.scenePhase) var scenePhase
 
     // MARK: - Locals
