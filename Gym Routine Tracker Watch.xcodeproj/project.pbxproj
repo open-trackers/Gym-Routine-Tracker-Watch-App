@@ -12,6 +12,7 @@
 		4004526829E399B700B0D7B2 /* WidgetGRTBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004526729E399B700B0D7B2 /* WidgetGRTBundle.swift */; };
 		4004526A29E399B700B0D7B2 /* WidgetGRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004526929E399B700B0D7B2 /* WidgetGRT.swift */; };
 		4004526C29E399B800B0D7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4004526B29E399B800B0D7B2 /* Assets.xcassets */; };
+		400452AA29E39C9A00B0D7B2 /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 400452A929E39C9A00B0D7B2 /* GroutUI */; };
 		40A1A8C9294550620042966C /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40A1A8C8294550620042966C /* GroutUI */; };
 		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
@@ -86,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400452AA29E39C9A00B0D7B2 /* GroutUI in Frameworks */,
 				4004526529E399B700B0D7B2 /* SwiftUI.framework in Frameworks */,
 				4004526429E399B700B0D7B2 /* WidgetKit.framework in Frameworks */,
 			);
@@ -187,6 +189,9 @@
 			dependencies = (
 			);
 			name = WidgetGRTExtension;
+			packageProductDependencies = (
+				400452A929E39C9A00B0D7B2 /* GroutUI */,
+			);
 			productName = WidgetGRTExtension;
 			productReference = 4004526329E399B700B0D7B2 /* WidgetGRTExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -687,6 +692,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		400452A929E39C9A00B0D7B2 /* GroutUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GroutUI;
+		};
 		40A1A8C8294550620042966C /* GroutUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GroutUI;
