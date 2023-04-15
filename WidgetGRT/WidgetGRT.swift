@@ -23,15 +23,15 @@ struct WidgetGRT: Widget {
         }
         .configurationDisplayName("Gym Routines")
         .description("Time since last gym routine.")
+        .supportedFamilies([.accessoryCircular])
     }
 }
 
 struct WidgetGRT_Previews: PreviewProvider {
     static var previews: some View {
-        let entry = WidgetEntry(name: "Blah", timeInterval: 1000)
+        let entry = WidgetEntry(name: "Blah", imageName: nil, timeInterval: 1000)
         return WidgetView(entry: entry)
             .accentColor(.blue)
             .previewContext(WidgetPreviewContext(family: .accessoryCircular))
     }
 }
-
