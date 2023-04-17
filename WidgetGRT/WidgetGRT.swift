@@ -14,6 +14,7 @@ import WidgetKit
 import GroutLib
 import GroutUI
 
+@main
 struct WidgetGRT: Widget {
     let kind: String = "WidgetGRT"
 
@@ -29,7 +30,7 @@ struct WidgetGRT: Widget {
 
 struct WidgetGRT_Previews: PreviewProvider {
     static var previews: some View {
-        let entry = WidgetEntry(name: "Blah", imageName: nil, timeInterval: 1000)
+        let entry = WidgetEntry(name: "Blah", imageName: nil, timeInterval: 1000, color: nil)
         return WidgetView(entry: entry)
             .accentColor(.blue)
             .previewContext(WidgetPreviewContext(family: .accessoryCircular))

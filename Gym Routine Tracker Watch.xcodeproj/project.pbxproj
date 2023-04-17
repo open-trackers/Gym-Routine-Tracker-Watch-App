@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4049947829EA168A000FF0F1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E12B8729E0CDE700D49A86 /* WidgetKit.framework */; };
-		4049947929EA168A000FF0F1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E12B8929E0CDE700D49A86 /* SwiftUI.framework */; };
-		4049947C29EA168A000FF0F1 /* WidgetGRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049947B29EA168A000FF0F1 /* WidgetGRT.swift */; };
-		4049947E29EA168A000FF0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4049947D29EA168A000FF0F1 /* Assets.xcassets */; };
-		4049948229EA168A000FF0F1 /* WidgetGRTExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4049947729EA168A000FF0F1 /* WidgetGRTExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		400E512429ECFFA100EC7FF8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E12B8729E0CDE700D49A86 /* WidgetKit.framework */; };
+		400E512529ECFFA100EC7FF8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E12B8929E0CDE700D49A86 /* SwiftUI.framework */; };
+		400E512829ECFFA100EC7FF8 /* WidgetGRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400E512729ECFFA100EC7FF8 /* WidgetGRT.swift */; };
+		400E512A29ECFFA200EC7FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400E512929ECFFA200EC7FF8 /* Assets.xcassets */; };
+		400E512E29ECFFA200EC7FF8 /* WidgetGRTExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 400E512329ECFFA100EC7FF8 /* WidgetGRTExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		400E513429ECFFF100EC7FF8 /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 400E513329ECFFF100EC7FF8 /* GroutUI */; };
+		4092AB3129ECF873002D6C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE14AB293B153700462D62 /* Preview Assets.xcassets */; };
 		40A1A8C9294550620042966C /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40A1A8C8294550620042966C /* GroutUI */; };
 		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
@@ -19,20 +21,16 @@
 		40CE1404293B0DBB00462D62 /* Gym Routine Tracker.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40CE1409293B0DBB00462D62 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1408293B0DBB00462D62 /* WatchApp.swift */; };
 		40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE140C293B0DBC00462D62 /* Assets.xcassets */; };
-		40CE1458293B100800462D62 /* GroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE1457293B100800462D62 /* GroutLib */; };
 		40CE145D293B113600462D62 /* Compactor in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE145C293B113600462D62 /* Compactor */; };
 		40CE14B0293B153700462D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1490293B153700462D62 /* ContentView.swift */; };
-		40CE14C6293B153700462D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE14AB293B153700462D62 /* Preview Assets.xcassets */; };
-		40E61D9829EA16CC006DB181 /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40E61D9729EA16CC006DB181 /* GroutUI */; };
-		40EBE1C929634FEA004B9189 /* GroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40EBE1C829634FEA004B9189 /* GroutUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4049948029EA168A000FF0F1 /* PBXContainerItemProxy */ = {
+		400E512C29ECFFA200EC7FF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40CE13F7293B0DBB00462D62 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4049947629EA168A000FF0F1;
+			remoteGlobalIDString = 400E512229ECFFA100EC7FF8;
 			remoteInfo = WidgetGRTExtension;
 		};
 		40CE1405293B0DBB00462D62 /* PBXContainerItemProxy */ = {
@@ -62,7 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4049948229EA168A000FF0F1 /* WidgetGRTExtension.appex in Embed Foundation Extensions */,
+				400E512E29ECFFA200EC7FF8 /* WidgetGRTExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,10 +68,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4049947729EA168A000FF0F1 /* WidgetGRTExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetGRTExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		4049947B29EA168A000FF0F1 /* WidgetGRT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGRT.swift; sourceTree = "<group>"; };
-		4049947D29EA168A000FF0F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4049947F29EA168A000FF0F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400E512329ECFFA100EC7FF8 /* WidgetGRTExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetGRTExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		400E512729ECFFA100EC7FF8 /* WidgetGRT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGRT.swift; sourceTree = "<group>"; };
+		400E512929ECFFA200EC7FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		400E512B29ECFFA200EC7FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400E513229ECFFA900EC7FF8 /* WidgetGRTExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetGRTExtension.entitlements; sourceTree = "<group>"; };
 		40A70CA9293BA22D008688F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40A70CAA293BA22D008688F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Routine Tracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,17 +85,16 @@
 		40CE14AB293B153700462D62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		40E12B8729E0CDE700D49A86 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		40E12B8929E0CDE700D49A86 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		40E61D9929EA173B006DB181 /* WidgetGRTExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetGRTExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4049947429EA168A000FF0F1 /* Frameworks */ = {
+		400E512029ECFFA100EC7FF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E61D9829EA16CC006DB181 /* GroutUI in Frameworks */,
-				4049947929EA168A000FF0F1 /* SwiftUI.framework in Frameworks */,
-				4049947829EA168A000FF0F1 /* WidgetKit.framework in Frameworks */,
+				400E513429ECFFF100EC7FF8 /* GroutUI in Frameworks */,
+				400E512529ECFFA100EC7FF8 /* SwiftUI.framework in Frameworks */,
+				400E512429ECFFA100EC7FF8 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,23 +102,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CE1458293B100800462D62 /* GroutLib in Frameworks */,
 				40BD218F293FDD0500B17BEA /* GroutLib in Frameworks */,
 				40A1A8C9294550620042966C /* GroutUI in Frameworks */,
 				40CE145D293B113600462D62 /* Compactor in Frameworks */,
-				40EBE1C929634FEA004B9189 /* GroutUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4049947A29EA168A000FF0F1 /* WidgetGRT */ = {
+		400E512629ECFFA100EC7FF8 /* WidgetGRT */ = {
 			isa = PBXGroup;
 			children = (
-				4049947B29EA168A000FF0F1 /* WidgetGRT.swift */,
-				4049947D29EA168A000FF0F1 /* Assets.xcassets */,
-				4049947F29EA168A000FF0F1 /* Info.plist */,
+				400E512729ECFFA100EC7FF8 /* WidgetGRT.swift */,
+				400E512929ECFFA200EC7FF8 /* Assets.xcassets */,
+				400E512B29ECFFA200EC7FF8 /* Info.plist */,
 			);
 			path = WidgetGRT;
 			sourceTree = "<group>";
@@ -128,11 +124,11 @@
 		40CE13F6293B0DBB00462D62 = {
 			isa = PBXGroup;
 			children = (
-				40E61D9929EA173B006DB181 /* WidgetGRTExtension.entitlements */,
+				400E513229ECFFA900EC7FF8 /* WidgetGRTExtension.entitlements */,
 				40A70CA9293BA22D008688F8 /* LICENSE */,
 				40A70CAA293BA22D008688F8 /* README.md */,
 				40CE1407293B0DBB00462D62 /* Sources */,
-				4049947A29EA168A000FF0F1 /* WidgetGRT */,
+				400E512629ECFFA100EC7FF8 /* WidgetGRT */,
 				40CE13FE293B0DBB00462D62 /* Products */,
 				40CE1456293B100800462D62 /* Frameworks */,
 			);
@@ -143,7 +139,7 @@
 			children = (
 				40CE13FD293B0DBB00462D62 /* Gym Routine Tracker Watch.app */,
 				40CE1403293B0DBB00462D62 /* Gym Routine Tracker.app */,
-				4049947729EA168A000FF0F1 /* WidgetGRTExtension.appex */,
+				400E512329ECFFA100EC7FF8 /* WidgetGRTExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,19 +172,19 @@
 				40CE14AB293B153700462D62 /* Preview Assets.xcassets */,
 			);
 			name = "Preview Content";
-			path = "../../../_archive/_watchapp_archive/OldStuff/Source/Preview Content";
-			sourceTree = "<group>";
+			path = "Sources/Preview Content";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4049947629EA168A000FF0F1 /* WidgetGRTExtension */ = {
+		400E512229ECFFA100EC7FF8 /* WidgetGRTExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4049948529EA168B000FF0F1 /* Build configuration list for PBXNativeTarget "WidgetGRTExtension" */;
+			buildConfigurationList = 400E513129ECFFA200EC7FF8 /* Build configuration list for PBXNativeTarget "WidgetGRTExtension" */;
 			buildPhases = (
-				4049947329EA168A000FF0F1 /* Sources */,
-				4049947429EA168A000FF0F1 /* Frameworks */,
-				4049947529EA168A000FF0F1 /* Resources */,
+				400E511F29ECFFA100EC7FF8 /* Sources */,
+				400E512029ECFFA100EC7FF8 /* Frameworks */,
+				400E512129ECFFA100EC7FF8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -196,10 +192,10 @@
 			);
 			name = WidgetGRTExtension;
 			packageProductDependencies = (
-				40E61D9729EA16CC006DB181 /* GroutUI */,
+				400E513329ECFFF100EC7FF8 /* GroutUI */,
 			);
 			productName = WidgetGRTExtension;
-			productReference = 4049947729EA168A000FF0F1 /* WidgetGRTExtension.appex */;
+			productReference = 400E512329ECFFA100EC7FF8 /* WidgetGRTExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		40CE13FC293B0DBB00462D62 /* Gym Routine Tracker Watch */ = {
@@ -231,15 +227,13 @@
 			buildRules = (
 			);
 			dependencies = (
-				4049948129EA168A000FF0F1 /* PBXTargetDependency */,
+				400E512D29ECFFA200EC7FF8 /* PBXTargetDependency */,
 			);
 			name = "Gym Routine Tracker";
 			packageProductDependencies = (
-				40CE1457293B100800462D62 /* GroutLib */,
 				40CE145C293B113600462D62 /* Compactor */,
 				40BD218E293FDD0500B17BEA /* GroutLib */,
 				40A1A8C8294550620042966C /* GroutUI */,
-				40EBE1C829634FEA004B9189 /* GroutUI */,
 			);
 			productName = "Gym Routine Tracker Watch";
 			productReference = 40CE1403293B0DBB00462D62 /* Gym Routine Tracker.app */;
@@ -255,7 +249,7 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					4049947629EA168A000FF0F1 = {
+					400E512229ECFFA100EC7FF8 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 					40CE13FC293B0DBB00462D62 = {
@@ -286,17 +280,17 @@
 			targets = (
 				40CE13FC293B0DBB00462D62 /* Gym Routine Tracker Watch */,
 				40CE1402293B0DBB00462D62 /* Gym Routine Tracker */,
-				4049947629EA168A000FF0F1 /* WidgetGRTExtension */,
+				400E512229ECFFA100EC7FF8 /* WidgetGRTExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4049947529EA168A000FF0F1 /* Resources */ = {
+		400E512129ECFFA100EC7FF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4049947E29EA168A000FF0F1 /* Assets.xcassets in Resources */,
+				400E512A29ECFFA200EC7FF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CE14C6293B153700462D62 /* Preview Assets.xcassets in Resources */,
+				4092AB3129ECF873002D6C0F /* Preview Assets.xcassets in Resources */,
 				40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,11 +315,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4049947329EA168A000FF0F1 /* Sources */ = {
+		400E511F29ECFFA100EC7FF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4049947C29EA168A000FF0F1 /* WidgetGRT.swift in Sources */,
+				400E512829ECFFA100EC7FF8 /* WidgetGRT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,10 +335,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4049948129EA168A000FF0F1 /* PBXTargetDependency */ = {
+		400E512D29ECFFA200EC7FF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4049947629EA168A000FF0F1 /* WidgetGRTExtension */;
-			targetProxy = 4049948029EA168A000FF0F1 /* PBXContainerItemProxy */;
+			target = 400E512229ECFFA100EC7FF8 /* WidgetGRTExtension */;
+			targetProxy = 400E512C29ECFFA200EC7FF8 /* PBXContainerItemProxy */;
 		};
 		40CE1406293B0DBB00462D62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -354,7 +348,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4049948329EA168B000FF0F1 /* Debug */ = {
+		400E512F29ECFFA200EC7FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -385,7 +379,7 @@
 			};
 			name = Debug;
 		};
-		4049948429EA168B000FF0F1 /* Release */ = {
+		400E513029ECFFA200EC7FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -641,11 +635,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4049948529EA168B000FF0F1 /* Build configuration list for PBXNativeTarget "WidgetGRTExtension" */ = {
+		400E513129ECFFA200EC7FF8 /* Build configuration list for PBXNativeTarget "WidgetGRTExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4049948329EA168B000FF0F1 /* Debug */,
-				4049948429EA168B000FF0F1 /* Release */,
+				400E512F29ECFFA200EC7FF8 /* Debug */,
+				400E513029ECFFA200EC7FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -707,6 +701,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		400E513329ECFFF100EC7FF8 /* GroutUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GroutUI;
+		};
 		40A1A8C8294550620042966C /* GroutUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GroutUI;
@@ -716,24 +714,10 @@
 			package = 40BD218D293FDD0500B17BEA /* XCRemoteSwiftPackageReference "GroutLib" */;
 			productName = GroutLib;
 		};
-		40CE1457293B100800462D62 /* GroutLib */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = GroutLib;
-		};
 		40CE145C293B113600462D62 /* Compactor */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */;
 			productName = Compactor;
-		};
-		40E61D9729EA16CC006DB181 /* GroutUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40EBE1C729634FEA004B9189 /* XCRemoteSwiftPackageReference "GroutUI" */;
-			productName = GroutUI;
-		};
-		40EBE1C829634FEA004B9189 /* GroutUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40EBE1C729634FEA004B9189 /* XCRemoteSwiftPackageReference "GroutUI" */;
-			productName = GroutUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
