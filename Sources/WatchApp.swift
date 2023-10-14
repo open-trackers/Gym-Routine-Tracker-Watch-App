@@ -35,7 +35,10 @@ struct Watch_App: App {
                 .environmentObject(coreDataStack)
         }
         .onChange(of: scenePhase) { _ in
-            // save if: (1) app moved to background, and (2) changes are pending
+            // save if transitioning to inactive or background
+            guard scenePhase == .inactive || scenePhase == .background else { return }
+
+            // and changes are pending
             do {
                 try coreDataStack.container.viewContext.save()
             } catch {
